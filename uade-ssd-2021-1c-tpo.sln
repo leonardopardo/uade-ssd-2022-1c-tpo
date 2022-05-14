@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "uade-ssd-2021-1c-tpo", "uade-ssd-2021-1c-tpo.dtproj", "{C8218893-FB23-40E9-8E58-34CDB6302382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8218893-FB23-40E9-8E58-34CDB6302382}.Development|Default.ActiveCfg = Development
+		{C8218893-FB23-40E9-8E58-34CDB6302382}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDF54828-3FE2-4E33-99E0-2F45DA6F7DAC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.DW2022"
+  DTS:DTSID="{EFE03755-C74F-42E6-A5D1-DAD166D2F0C7}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=DW2022;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-uade-ssd-2021-1c-tpo-{EFE03755-C74F-42E6-A5D1-DAD166D2F0C7}localhost.DW2022;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
