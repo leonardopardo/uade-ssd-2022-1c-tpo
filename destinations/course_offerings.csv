@@ -1,0 +1,302 @@
+,Course,Course Title,Hours,Instructor,Room,Male Enrolled,Female Enrolled,Season,Season Order,Year,Monday,Tuesday,Wednesday,Thursday,Friday
+0,MIS 2113/3113-001,Comp Based Info Sys,07:30:00,Cappabianco,AH 100,34.0,18.0,Fall,4,2019,True,False,True,False,True
+1,MIS 2113/3113-002,Comp Based Info Sys,07:30:00,Southern,AH 100,25.0,16.0,Fall,4,2019,False,True,False,True,False
+2,MIS 2113/3113-003,Comp Based Info Sys,11:30:00,Ratwatte,AH 100,27.0,21.0,Fall,4,2019,True,False,True,False,True
+3,MIS 2113/3113-004,Comp Based Info Sys,12:30:00,Berry,AH 100,41.0,29.0,Fall,4,2019,True,False,True,False,True
+4,MIS 2113/3113-005,Comp Based Info Sys,13:30:00,Ratwatte,AH 104,35.0,22.0,Fall,4,2019,True,False,True,False,True
+5,MIS 2113/3113-006,Comp Based Info Sys,09:00:00,Ferguson,ARM 101,23.0,11.0,Fall,4,2019,False,True,False,True,False
+6,MIS 2113/3113-007,Comp Based Info Sys,10:30:00,Fraley,SEC PO 203,28.0,14.0,Fall,4,2019,False,True,False,True,False
+7,MIS 2113/3113-008,Comp Based Info Sys,12:00:00,Crew,AH 311,34.0,18.0,Fall,4,2019,False,True,False,True,False
+8,MIS 2113/3113-009,Comp Based Info Sys,13:30:00,Ferguson,BL 102,25.0,16.0,Fall,4,2019,False,True,False,True,False
+9,MIS 2113/3113-010,Comp Based Info Sys,12:00:00,Fraley,FH 334,27.0,21.0,Fall,4,2019,False,True,False,True,False
+10,MIS 2113/3113-900,Comp Based Info Sys,16:30:00,Mokrenko,AH 104,41.0,29.0,Fall,4,2019,False,True,False,True,False
+11,MIS 2113/3113-901,Comp Based Info Sys,18:30:00,Garcia,AH 100,35.0,22.0,Fall,4,2019,True,False,False,False,False
+12,MIS 2113/3113-902,Comp Based Info Sys,18:30:00,Benanzer,BURT 208,23.0,11.0,Fall,4,2019,False,True,False,False,False
+13,MIS 2113/3113-903,Comp Based Info Sys,18:30:00,Parker,AH 100,28.0,14.0,Fall,4,2019,False,False,True,False,False
+14,MIS 2113/3113-904,Comp Based Info Sys,18:30:00,Parker,AH 311,29.0,23.0,Fall,4,2019,False,False,False,True,False
+15,MIS 2113/3113-905,Comp Based Info Sys,16:30:00,Ferguson,AH 104,22.0,34.0,Fall,4,2019,True,False,True,False,False
+16,MIS 3013-001,C Programming,09:00:00,Warner,AH 301,31.0,25.0,Fall,4,2019,False,True,False,True,False
+17,MIS 3013-002,C Programming,10:30:00,Wun,AH 101,23.0,24.0,Fall,4,2019,True,False,True,False,True
+18,MIS 3013-003,C Programming,12:00:00,Warner,AH 112,15.0,22.0,Fall,4,2019,False,True,False,True,False
+19,MIS 3013-900,C Programming,18:30:00,Narayanan,AH 315,26.0,31.0,Fall,4,2019,False,False,True,False,False
+20,MIS 3013-901,C Programming,18:30:00,Cornelius,AH 109,21.0,23.0,Fall,4,2019,False,True,False,False,False
+21,MIS 3013-902,C Programming,18:30:00,See,AH 112,24.0,25.0,Fall,4,2019,True,False,False,False,False
+22,MIS 3023-900,Intensive COBOL,18:30:00,Black,AH 112,22.0,25.0,Fall,4,2019,False,False,True,False,False
+23,MIS 3033-001,JAVA Programming,09:30:00,Gruenwald,AH 312,21.0,15.0,Fall,4,2019,True,False,True,False,True
+24,MIS 3033-002,JAVA Programming,10:30:00,Steele,AH 312,26.0,23.0,Fall,4,2019,True,False,True,False,True
+25,MIS 3033-003,Visual Basic,10:30:00,Ratwatte,AH 311,19.0,34.0,Fall,4,2019,False,True,False,True,False
+26,MIS 3033-004,Visual Basic,13:30:00,Ratwatte,AH 311,18.0,23.0,Fall,4,2019,False,True,False,True,False
+27,MIS 3033-900,C++ Programming,18:30:00,See,AH 315,13.0,23.0,Fall,4,2019,False,True,False,False,False
+28,MIS 3033-901,JAVA Programming,18:30:00,See,AH 315,24.0,21.0,Fall,4,2019,False,False,False,True,False
+29,MIS 3353-001,Databases,09:00:00,Carte,AH 311,27.0,21.0,Fall,4,2019,False,True,False,True,False
+30,MIS 3353-002,Databases,12:00:00,Carte,AH 355,41.0,29.0,Fall,4,2019,False,True,False,True,False
+31,MIS 3353-003,Databases,15:00:00,Zheng,PHSC 416,35.0,22.0,Fall,4,2019,True,False,True,False,False
+32,MIS 3353-900,Databases,18:30:00,Kemp,AH 101,23.0,11.0,Fall,4,2019,False,False,True,False,False
+33,MIS 3353-901,Databases,16:30:00,Kemp,AH 301,28.0,14.0,Fall,4,2019,False,True,False,True,False
+34,MIS 3363-001,Infrastructure,13:30:00,Carter,AH 359,100.0,102.0,Fall,4,2019,True,False,True,False,False
+35,MIS 3363-002,Infrastructure,13:30:00,Warner,AH 312,23.0,21.0,Fall,4,2019,False,True,False,True,False
+36,MIS 3363-003,Infrastructure,15:00:00,Carter,AH 255,26.0,12.0,Fall,4,2019,True,False,True,False,False
+37,MIS 3363-004,Infrastructure,11:30:00,Karahannas,AH 101,21.0,11.0,Fall,4,2019,True,False,True,False,True
+38,MIS 3363-900,Infrastructure,18:30:00,Karahannas,AH 101,29.0,15.0,Fall,4,2019,False,False,False,True,False
+39,MIS 3373-001,Systems Theory,13:30:00,Shaft,AH 101,30.0,17.0,Fall,4,2019,True,False,True,False,False
+40,MIS 3373-002,Systems Theory,15:00:00,Shaft,AH 101,23.0,21.0,Fall,4,2019,True,False,True,False,False
+41,MIS 3373-003,Systems Theory,10:30:00,Price,AH 100,24.0,32.0,Fall,4,2019,False,True,False,True,False
+42,MIS 3373-004,Systems Theory,13:30:00,Price,AH 104,19.0,21.0,Fall,4,2019,False,True,False,True,False
+43,MIS 3373-900,Systems Theory,18:30:00,Jasperson,AH 100,27.0,32.0,Fall,4,2019,False,True,False,False,False
+44,MIS 4223-900,Telecommunications,18:30:00,Busse,AH 104,32.0,29.0,Fall,4,2019,False,True,False,False,False
+45,MIS 4413-001,OO System Design,10:30:00,Jasperson,AH 112,22.0,20.0,Fall,4,2019,False,True,False,True,False
+46,MIS 4663-900,MIS Field Project,18:30:00,Kemp,AH 304,25.0,21.0,Fall,4,2019,True,False,False,False,False
+47,MIS 4663-901,MIS Field Project,18:30:00,Kemp,AH 150,200.0,101.0,Fall,4,2019,True,False,False,False,False
+48,MIS 4663-902,MIS Field Project,18:30:00,Schwarzkopf,AH 150,180.0,100.0,Fall,4,2019,True,False,False,False,False
+49,MIS 4663-903,MIS Field Project,18:30:00,Schwarzkopf,AH 304,29.0,31.0,Fall,4,2019,True,False,False,False,False
+50,MIS 4663-904,MIS Field Project,18:30:00,Price,AH 304,24.0,25.0,Fall,4,2019,True,False,False,False,False
+51,MIS 4710-900,Advanced Database,18:30:00,Gruenwald,AH 104,22.0,25.0,Fall,4,2019,False,False,False,True,False
+52,MIS 4710-901,Digital Media,18:30:00,Williams,AH 312,21.0,15.0,Fall,4,2019,False,False,True,False,False
+53,MIS 5003-930,Sem-Mgt Info Sys,18:30:00,Chidambaram,OKC,26.0,23.0,Fall,4,2019,False,False,True,False,False
+54,MIS 5113-900,Info Access Mgt,18:30:00,Van Horn,AH 311,19.0,34.0,Fall,4,2019,False,False,True,False,False
+55,MIS 5403-900,IT Enabled E-Comm,18:30:00,Zmud,AH 301,18.0,23.0,Fall,4,2019,True,False,False,False,False
+56,MIS 5973-001,OO System Design,10:30:00,Jasperson,AH 112,16.0,43.0,Fall,4,2019,False,True,False,True,False
+57,MIS 5973-900,Advanced Database,18:30:00,Gruenwald,AH 104,21.0,11.0,Fall,4,2019,False,False,False,True,False
+58,MIS 6743-001,Comm & Decision Proc,10:30:00,Chidambaram,AH 352,29.0,15.0,Fall,4,2019,True,False,False,False,False
+0,MIS 2113-010,Comp Based Info Sys,13:30:00,Price,AH 150,123.0,150.0,Fall,4,2020,True,False,False,False,False
+1,MIS 2113-011,Discussion Session,09:00:00,Ferguson,AH 300,28.0,14.0,Fall,4,2020,False,False,True,False,False
+2,MIS 2113-012,Discussion Session,10:30:00,Marley,AH 300,21.0,21.0,Fall,4,2020,False,False,True,False,False
+3,MIS 2113-013,Discussion Session,12:00:00,Kim,AH 300,23.0,21.0,Fall,4,2020,False,False,True,False,False
+4,MIS 2113-014,Discussion Session,13:30:00,Kim,AH 300,26.0,12.0,Fall,4,2020,False,False,True,False,False
+5,MIS 2113-015,Discussion Session,15:00:00,Ferguson,AH 300,21.0,11.0,Fall,4,2020,False,False,True,False,False
+6,MIS 2113-016,Discussion Session,07:30:00,Zheng,AH 300,29.0,15.0,Fall,4,2020,False,False,True,False,False
+7,MIS 2113-017,Discussion Session,16:30:00,Ferguson,AH 300,30.0,17.0,Fall,4,2020,False,False,True,False,False
+8,MIS 2113-018,Discussion Session,12:00:00,Platerio,AH 300,23.0,21.0,Fall,4,2020,False,False,False,False,True
+9,MIS 2113-020,Comp Based Info Sys,13:30:00,Price,AH 150,200.0,99.0,Fall,4,2020,False,False,True,False,False
+10,MIS 2113-021,Discussion Session,09:00:00,Platerio,AH 300,23.0,24.0,Fall,4,2020,True,False,False,False,False
+11,MIS 2113-022,Discussion Session,10:30:00,Marley,AH 300,25.0,14.0,Fall,4,2020,True,False,False,False,False
+12,MIS 2113-023,Discussion Session,12:00:00,Zheng,AH 300,16.0,43.0,Fall,4,2020,True,False,False,False,False
+13,MIS 2113-024,Discussion Session,13:30:00,Platerio,AH 300,21.0,21.0,Fall,4,2020,True,False,False,False,False
+14,MIS 2113-025,Discussion Session,15:00:00,Zheng,AH 300,29.0,23.0,Fall,4,2020,True,False,False,False,False
+15,MIS 2113-028,Discussion Session,13:30:00,Platerio,AH 300,22.0,34.0,Fall,4,2020,False,False,False,False,True
+16,MIS 2113-029,Discussion Session,09:00:00,Ferguson,AH 300,31.0,25.0,Fall,4,2020,False,False,False,False,True
+17,MIS 2113-900,Comp Based Info Sys,18:30:00,Frye,AH 311,23.0,24.0,Fall,4,2020,False,False,False,True,False
+18,MIS 2113-901,Comp Based Info Sys,16:30:00,Berry,AH 104,25.0,14.0,Fall,4,2020,True,False,True,False,False
+19,MIS 3013-001,C Programming,10:30:00,Warner,AH 301,25.0,15.0,Fall,4,2020,False,True,False,True,False
+20,MIS 3013-003,C Programming,12:00:00,Warner,AH 112,15.0,26.0,Fall,4,2020,False,True,False,True,False
+21,MIS 3013-004,C Programming,15:00:00,Warner,AH 359,100.0,21.0,Fall,4,2020,True,False,True,False,False
+22,MIS 3013-006,C Programming,11:30:00,Ferguson,AH 101,34.0,24.0,Fall,4,2020,True,False,True,False,True
+23,MIS 3033-001,JAVA Programming,10:30:00,Ratwatte,AH 101,23.0,22.0,Fall,4,2020,True,False,True,False,True
+24,MIS 3033-002,JAVA Programming,15:00:00,Ratwatte,AH 100,43.0,21.0,Fall,4,2020,False,True,False,True,False
+25,MIS 3033-003,Visual Basic,13:30:00,Ratwatte,AH 311,21.0,26.0,Fall,4,2020,False,True,False,True,False
+26,MIS 3033-900,C++ Programming,18:30:00,Parrish,AH 315,23.0,19.0,Fall,4,2020,False,True,False,False,False
+27,MIS 3033-901,JAVA Programming,18:30:00,Parrish,AH 315,34.0,18.0,Fall,4,2020,False,False,True,False,False
+28,MIS 3033-902,Visual Basic,16:30:00,Ratwatte,AH 311,25.0,16.0,Fall,4,2020,True,False,True,False,False
+29,MIS 3353-001,Databases,09:00:00,Warner,AH 311,27.0,21.0,Fall,4,2020,False,True,False,True,False
+30,MIS 3353-002,Databases,12:00:00,Schwarzkopf,AH 355,13.0,23.0,Fall,4,2020,False,True,False,True,False
+31,MIS 3353-003,Databases,13:30:00,Miranda,AH 304,80.0,21.0,Fall,4,2020,True,False,True,False,False
+32,MIS 3353-901,Databases,16:30:00,Kemp,AH 301,14.0,29.0,Fall,4,2020,False,True,False,True,False
+33,MIS 3363-001,Infrastructure,13:30:00,Croes,AH 104,15.0,22.0,Fall,4,2020,True,False,True,False,False
+34,MIS 3363-002,Infrastructure,13:30:00,Carter,AH 311,26.0,31.0,Fall,4,2020,True,False,True,False,False
+35,MIS 3363-003,Infrastructure,15:00:00,Carter,AH 311,21.0,23.0,Fall,4,2020,True,False,True,False,False
+36,MIS 3363-900,Infrastructure,16:30:00,Croes,AH 112,24.0,25.0,Fall,4,2020,True,False,True,False,False
+37,MIS 3373-001,Systems Theory,13:30:00,Jasperson,AH 101,22.0,25.0,Fall,4,2020,False,True,False,True,False
+38,MIS 3373-002,Systems Theory,15:00:00,Jasperson,AH 101,21.0,15.0,Fall,4,2020,False,True,False,True,False
+39,MIS 3373-004,Systems Theory,13:30:00,Sharma,AH 100,26.0,23.0,Fall,4,2020,False,True,False,True,False
+40,MIS 3373-900,Systems Theory,18:30:00,Sharma,AH 100,19.0,34.0,Fall,4,2020,False,True,False,False,False
+41,MIS 4413-001,OO System Design,10:30:00,Jasperson,AH 112,18.0,23.0,Fall,4,2020,False,True,False,True,False
+42,MIS 4663-900,Systems Project,16:30:00,Schwarzkopf,AH 255,100.0,23.0,Fall,4,2020,True,False,False,False,False
+43,MIS 4663-901,Systems Project,16:30:00,Kemp,AH 255,24.0,21.0,Fall,4,2020,True,False,False,False,False
+44,MIS 4663-902,Systems Project,16:30:00,Schwarzkopf,AH 255,150.0,55.0,Fall,4,2020,True,False,False,False,False
+45,MIS 4663-903,Systems Project,16:30:00,Price,AH 304,15.0,22.0,Fall,4,2020,True,False,False,False,False
+46,MIS 4663-904,Systems Project,16:30:00,Kemp,AH 304,50.0,31.0,Fall,4,2020,True,False,False,False,False
+47,MIS 4663-905,Systems Project,16:30:00,Cole,AH 304,21.0,23.0,Fall,4,2020,True,False,False,False,False
+48,MIS 4710-900,Advanced Database,18:30:00,Chidambaram,AH 104,24.0,25.0,Fall,4,2020,False,True,False,False,False
+49,MIS 4710-901,Digital Media,18:30:00,Williams,AH 100,22.0,25.0,Fall,4,2020,False,False,True,False,False
+50,MIS 5003-900,Sem-Mgt Info Sys,18:30:00,Chidambaram,AH 100,21.0,15.0,Fall,4,2020,False,False,False,True,False
+51,MIS 5113-930,Info Access Mgt,18:30:00,Van Horn,OKC,26.0,23.0,Fall,4,2020,False,True,False,False,False
+52,MIS 5413-001,OO System Design,10:30:00,Jasperson,AH 112,19.0,34.0,Fall,4,2020,False,True,False,True,False
+53,MIS 5973-900,Advanced Database,18:30:00,Chidambaram,AH 104,18.0,23.0,Fall,4,2020,False,True,False,False,False
+54,MIS 5973-901,Knowledge Management,18:30:00,Miranda,AH 301,16.0,43.0,Fall,4,2020,True,False,False,False,False
+55,MIS 6723-001,Managing Tech & Innov,10:30:00,Zmud,AH 352,21.0,21.0,Fall,4,2020,True,False,False,False,False
+0,MIS 2113-010,Comp Based Info Sys,13:30:00,Price,AH 150,100.0,189.0,Fall,4,2021,True,False,False,False,False
+1,MIS 2113-011,Discussion Session,09:00:00,TA,AH 300,25.0,16.0,Fall,4,2021,False,False,True,False,False
+2,MIS 2113-012,Discussion Session,10:30:00,TA,AH 300,27.0,21.0,Fall,4,2021,False,False,True,False,False
+3,MIS 2113-013,Discussion Session,12:00:00,TA,AH 300,41.0,29.0,Fall,4,2021,False,False,True,False,False
+4,MIS 2113-014,Discussion Session,13:30:00,TA,AH 300,35.0,22.0,Fall,4,2021,False,False,True,False,False
+5,MIS 2113-015,Discussion Session,15:00:00,TA,AH 300,23.0,11.0,Fall,4,2021,False,False,True,False,False
+6,MIS 2113-016,Discussion Session,16:30:00,TA,AH 300,28.0,14.0,Fall,4,2021,False,False,True,False,False
+7,MIS 2113-020,Comp Based Info Sys,13:30:00,Price,AH 150,100.0,150.0,Fall,4,2021,False,False,True,False,False
+8,MIS 2113-021,Discussion Session,09:00:00,TA,AH 300,23.0,21.0,Fall,4,2021,True,False,False,False,False
+9,MIS 2113-022,Discussion Session,10:30:00,TA,AH 300,26.0,12.0,Fall,4,2021,True,False,False,False,False
+10,MIS 2113-023,Discussion Session,12:00:00,TA,AH 300,21.0,11.0,Fall,4,2021,True,False,False,False,False
+11,MIS 2113-024,Discussion Session,13:30:00,Ferguson,AH 300,29.0,15.0,Fall,4,2021,True,False,False,False,False
+12,MIS 2113-025,Discussion Session,15:00:00,TA,AH 300,30.0,17.0,Fall,4,2021,True,False,False,False,False
+13,MIS 2113-026,Discussion Session,16:30:00,TA,AH 300,23.0,21.0,Fall,4,2021,True,False,False,False,False
+14,MIS 3013-010,C Programming,10:30:00,Carter/Ferguson,AH 359,24.0,32.0,Fall,4,2021,False,True,False,False,False
+15,MIS 3013-011,Discussion Session,10:30:00,Carter,AH 359,19.0,21.0,Fall,4,2021,False,False,False,True,False
+16,MIS 3013-012,Discussion Session,12:00:00,Carter,AH 101,27.0,32.0,Fall,4,2021,False,False,False,True,False
+17,MIS 3013-013,Discussion Session,13:30:00,Ferguson,AH 301,32.0,29.0,Fall,4,2021,False,False,False,True,False
+18,MIS 3013-014,Discussion Session,15:00:00,Ferguson,AH 301,22.0,20.0,Fall,4,2021,False,False,False,True,False
+19,MIS 3033-001,JAVA Programming,10:30:00,Ratwatte,AH 101,25.0,21.0,Fall,4,2021,True,False,True,False,True
+20,MIS 3033-002,Visual Basic,15:00:00,Ratwatte,AH 100,32.0,25.0,Fall,4,2021,False,True,False,True,False
+21,MIS 3033-003,Visual Basic,13:30:00,Ratwatte,AH 311,23.0,31.0,Fall,4,2021,False,True,False,True,False
+22,MIS 3033-900,Visual Basic,16:30:00,Zheng,AH 104,29.0,31.0,Fall,4,2021,False,True,False,True,False
+23,MIS 3033-901,JAVA Programming,18:30:00,Kemp,AH 315,40.0,32.0,Fall,4,2021,False,False,True,False,False
+24,MIS 3033-902,JAVA Programming,16:30:00,Ratwatte,AH 311,23.0,22.0,Fall,4,2021,True,False,True,False,False
+25,MIS 3353-001,Databases,09:00:00,Carte,AH 104,21.0,26.0,Fall,4,2021,False,True,False,True,False
+26,MIS 3353-002,Databases,12:00:00,Carte,AH 355,23.0,19.0,Fall,4,2021,False,True,False,True,False
+27,MIS 3353-003,Databases,10:30:00,Warner,AH 100,13.0,23.0,Fall,4,2021,False,True,False,True,False
+28,MIS 3363-001,Infrastructure,07:30:00,Crawford,AH 104,24.0,21.0,Fall,4,2021,False,True,False,True,False
+29,MIS 3363-002,Infrastructure,09:00:00,Warner,AH 100,14.0,29.0,Fall,4,2021,False,True,False,True,False
+30,MIS 3363-003,Infrastructure,13:30:00,Jasperson,AH 101,15.0,22.0,Fall,4,2021,False,True,False,True,False
+31,MIS 3363-004,Infrastructure,15:00:00,Jasperson,AH 101,26.0,31.0,Fall,4,2021,False,True,False,True,False
+32,MIS 3373-001,Systems Theory,13:30:00,Shaft,AH 311,21.0,23.0,Fall,4,2021,True,False,True,False,False
+33,MIS 3373-002,Systems Theory,15:00:00,Shaft,AH 311,23.0,21.0,Fall,4,2021,True,False,True,False,False
+34,MIS 3373-003,Systems Theory,12:00:00,Sharma,AH 100,35.0,25.0,Fall,4,2021,False,True,False,True,False
+35,MIS 3373-900,Systems Theory,16:30:00,Kemp,AH 100,30.0,31.0,Fall,4,2021,False,True,False,True,False
+36,MIS 4213-001,Prototyping & Rapid Appl Dev,15:00:00,Schwarzkopf,AH 100,25.0,31.0,Fall,4,2021,True,False,True,False,False
+37,MIS 4443-900,Advanced Database,18:30:00,Chidambaram,AH 311,21.0,32.0,Fall,4,2021,False,True,False,False,False
+38,MIS 4663-900,Systems Project,16:30:00,Ferguson,AH 255,58.0,130.0,Fall,4,2021,True,False,False,False,False
+39,MIS 4663-901,Systems Project,16:30:00,Price,AH 255,21.0,26.0,Fall,4,2021,True,False,False,False,False
+40,MIS 4663-902,Systems Project,16:30:00,Schwarzkopf,AH 255,105.0,54.0,Fall,4,2021,True,False,False,False,False
+41,MIS 4663-903,Systems Project,16:30:00,Schwarzkopf,AH 304,21.0,21.0,Fall,4,2021,True,False,False,False,False
+42,MIS 4663-904,Systems Project,16:30:00,Kemp,AH 304,29.0,23.0,Fall,4,2021,True,False,False,False,False
+43,MIS 5003-900,Sem-Mgt Info Sys,18:30:00,Sharma,AH 101,22.0,34.0,Fall,4,2021,False,False,False,True,False
+44,MIS 5113-900,Info Access Mgt,18:30:00,Miranda,AH 359,31.0,25.0,Fall,4,2021,False,True,False,False,False
+45,MIS 5313-930,IT Management,18:30:00,Barth,OKC,23.0,24.0,Fall,4,2021,False,False,False,True,False
+46,MIS 5403-900,IT Enabled E-Business,18:30:00,Zmud,AH 112,25.0,14.0,Fall,4,2021,False,False,True,False,False
+47,MIS 5973-900,Knowledge Management,18:30:00,Miranda,AH 112,25.0,15.0,Fall,4,2021,True,False,False,False,False
+0,MIS 2113-001,Comp Based Info Sys,07:30:00,Fraley,AH 100,15.0,26.0,Spring,2,2019,True,False,True,False,True
+1,MIS 2113-002,Comp Based Info Sys,12:30:00,Berry,AH 304,53.0,54.0,Spring,2,2019,True,False,True,False,True
+2,MIS 2113-003,Comp Based Info Sys,12:00:00,Ferguson,PHSC 359,34.0,24.0,Spring,2,2019,False,True,False,True,False
+3,MIS 2113-004,Comp Based Info Sys,09:00:00,Ferguson,BL 102,23.0,22.0,Spring,2,2019,False,True,False,True,False
+4,MIS 2113-005,Comp Based Info Sys,10:30:00,Crew,AH 301,43.0,21.0,Spring,2,2019,False,True,False,True,False
+5,MIS 2113-006,Comp Based Info Sys,15:00:00,Mokrenko,GLC 123,21.0,26.0,Spring,2,2019,False,True,False,True,False
+6,MIS 2113-007,Comp Based Info Sys,20:30:00,Fraley,AH 304,45.0,59.0,Spring,2,2019,True,False,True,False,True
+7,MIS 2113-008,Comp Based Info Sys,13:30:00,Ferguson,GLC 233,34.0,18.0,Spring,2,2019,True,False,True,False,True
+8,MIS 2113-009,Comp Based Info Sys,07:30:00,Hiremaglur,AH 100,25.0,16.0,Spring,2,2019,False,True,False,True,False
+9,MIS 2113-010,Comp Based Info Sys,13:30:00,Crew,BL 102,27.0,21.0,Spring,2,2019,False,True,False,True,False
+10,MIS 2113-900,Comp Based Info Sys,18:30:00,Garcia,AH 112,41.0,29.0,Spring,2,2019,True,False,False,False,False
+11,MIS 2113-901,Comp Based Info Sys,18:30:00,Benanzer,AH 304,52.0,54.0,Spring,2,2019,False,True,False,False,False
+12,MIS 2113-902,Comp Based Info Sys,18:30:00,Parker,PHSC 416,23.0,11.0,Spring,2,2019,False,False,True,False,False
+13,MIS 2113-903,Comp Based Info Sys,18:30:00,Parker,CH 104,28.0,14.0,Spring,2,2019,False,False,False,True,False
+14,MIS 2113-904,Comp Based Info Sys,16:30:00,Frye,AH 101,29.0,23.0,Spring,2,2019,True,False,True,False,False
+15,MIS 2113-905,Comp Based Info Sys,16:30:00,Wu,AH 104,22.0,34.0,Spring,2,2019,True,False,True,False,False
+16,MIS 3013-001,C Programming,08:30:00,Wun,AH 311,31.0,25.0,Spring,2,2019,True,False,True,False,True
+17,MIS 3013-002,C Programming,13:30:00,Warner,AH 315,23.0,24.0,Spring,2,2019,False,True,False,True,False
+18,MIS 3013-003,C Programming,09:30:00,Cornelius,AH 301,25.0,14.0,Spring,2,2019,True,False,True,False,True
+19,MIS 3013-004,C Programming,15:00:00,Warner,AH 101,25.0,15.0,Spring,2,2019,False,True,False,True,False
+20,MIS 3013-005,C Programming,15:00:00,Warner,AH 101,15.0,26.0,Spring,2,2019,True,False,True,False,False
+21,MIS 3013-900,C Programming,18:30:00,Narayanan,AH 315,25.0,21.0,Spring,2,2019,False,False,False,True,False
+22,MIS 3023-900,Intensive COBOL,18:30:00,Black,AH 7H,34.0,24.0,Spring,2,2019,False,False,True,False,False
+23,MIS 3033-001,JAVA Programming,11:30:00,Steele,AH 112,32.0,22.0,Spring,2,2019,True,False,True,False,True
+24,MIS 3033-002,Visual Basic,15:00:00,Ratwatte,AH 100,43.0,21.0,Spring,2,2019,False,True,False,True,False
+25,MIS 3033-003,Visual Basic,15:00:00,Ratwatte,AH 100,23.0,26.0,Spring,2,2019,True,False,True,False,False
+26,MIS 3033-901,C++ Programming,18:30:00,Gorshing,AH 312,23.0,19.0,Spring,2,2019,False,True,False,False,False
+27,MIS 3033-902,JAVA Programming,18:30:00,See,AH 101,32.0,18.0,Spring,2,2019,False,False,True,False,False
+28,MIS 3033-903,JAVA Programming,16:30:00,Ratwatte,AH 100,25.0,16.0,Spring,2,2019,True,False,True,False,False
+29,MIS 3033-904,C++ Programming,18:30:00,See,PHSC 225,27.0,21.0,Spring,2,2019,True,False,False,False,False
+30,MIS 3353-001,Databases,10:30:00,Warner,AH 311,41.0,29.0,Spring,2,2019,False,True,False,True,False
+31,MIS 3353-002,Databases,12:00:00,Carte,AH 100,35.0,22.0,Spring,2,2019,False,True,False,True,False
+32,MIS 3353-003,Databases,13:30:00,Dauffenbach,AH 100,23.0,11.0,Spring,2,2019,True,False,True,False,False
+33,MIS 3353-900,Databases,18:30:00,Kemp,AH 304,56.0,45.0,Spring,2,2019,False,False,False,True,False
+34,MIS 3353-901,Databases,16:30:00,Araujo,AH 112,21.0,21.0,Spring,2,2019,False,True,False,True,False
+35,MIS 3363-001,Infrastructure,13:30:00,Karahannas,AH 311,23.0,21.0,Spring,2,2019,True,False,True,False,False
+36,MIS 3363-002,Infrastructure,13:30:00,Carter,AH 311,26.0,12.0,Spring,2,2019,False,True,False,True,False
+37,MIS 3363-003,Infrastructure,15:00:00,Carter,AH 311,21.0,11.0,Spring,2,2019,False,True,False,True,False
+38,MIS 3363-004,Infrastructure,15:00:00,Karahannas,AH 104,29.0,15.0,Spring,2,2019,True,False,True,False,False
+39,MIS 3363-900,Infrastructure,18:30:00,Croes,AH 311,30.0,17.0,Spring,2,2019,False,False,False,True,False
+40,MIS 3373-001,Systems Theory,07:30:00,Price ,AH 101,23.0,21.0,Spring,2,2019,False,True,False,True,False
+41,MIS 3373-002,Systems Theory,09:00:00,Jasperson,AH 101,24.0,32.0,Spring,2,2019,False,True,False,True,False
+42,MIS 3373-003,Systems Theory,10:30:00,Price,AH 101,19.0,21.0,Spring,2,2019,False,True,False,True,False
+43,MIS 3373-004,Systems Theory,12:00:00,Jasperson,AH 101,27.0,32.0,Spring,2,2019,False,True,False,True,False
+44,MIS 3373-005,Systems Theory,15:00:00,Shaft,AH 112,32.0,29.0,Spring,2,2019,True,False,True,False,False
+45,MIS 4223-900,Telecommunications,18:30:00,Busse,AH 112,22.0,20.0,Spring,2,2019,False,False,True,False,False
+46,MIS 4413-001,OO System Design,13:30:00,Carte,AH 100,25.0,21.0,Spring,2,2019,False,True,False,True,False
+47,MIS 4663-900,Systems Project,18:30:00,Van Horn,AH 304,52.0,50.0,Spring,2,2019,True,False,False,False,False
+48,MIS 4663-901,Systems Project,18:30:00,Kemp,AH 304,23.0,31.0,Spring,2,2019,True,False,False,False,False
+49,MIS 4663-902,Systems Project,18:30:00,Schwarzkopf,AH 150,120.0,156.0,Spring,2,2019,True,False,False,False,False
+50,MIS 4663-903,Systems Project,16:30:00,Price,AH 301,23.0,22.0,Spring,2,2019,False,True,False,False,False
+51,MIS 4663-903,Systems Project,18:30:00,Price,AH 150,180.0,99.0,Spring,2,2019,True,False,False,False,False
+52,MIS 4663-904,Systems Project,18:30:00,Kemp,AH 150,130.0,150.0,Spring,2,2019,True,False,False,False,False
+53,MIS 4663-905,Systems Project,18:30:00,Cole,AH 304,50.0,51.0,Spring,2,2019,True,False,False,False,False
+54,MIS 4710-900,Digital Media,18:30:00,Williams,AH 312,24.0,25.0,Spring,2,2019,False,False,True,False,False
+55,MIS 4710-900,Advanced Database,18:30:00,Gruenwald,AH 359,22.0,25.0,Spring,2,2019,False,False,False,True,False
+56,MIS 5203-901,Sys Arch & Design,18:30:00,Schwarzkopf,AH 311,21.0,15.0,Spring,2,2019,True,False,False,False,False
+57,MIS 5323-930,Project Management,18:30:00,Shaft,OKC,26.0,23.0,Spring,2,2019,False,False,True,False,False
+58,MIS 5973-001,OO System Design,13:30:00,Carte,AH 100,19.0,34.0,Spring,2,2019,False,True,False,True,False
+59,MIS 5973-900,Advanced Database,18:30:00,Gruenwald,AH 359,18.0,23.0,Spring,2,2019,False,False,False,True,False
+60,MIS 6733-001,Org Impact of IT,12:00:00,Zmud,AH 352,16.0,43.0,Spring,2,2019,True,False,False,False,False
+0,MIS 2113-010,Comp Based Info Sys,13:30:00,Price,AH 150,100.0,150.0,Spring,2,2020,True,False,False,False,False
+1,MIS 2113-011,Discussion Session,09:00:00,Gil Platero,AH 300,24.0,21.0,Spring,2,2020,False,False,True,False,False
+2,MIS 2113-012,Discussion Session,10:30:00,Gil Platero,AH 300,14.0,29.0,Spring,2,2020,False,False,True,False,False
+3,MIS 2113-013,Discussion Session,12:00:00,Kim,AH 300,15.0,22.0,Spring,2,2020,False,False,True,False,False
+4,MIS 2113-014,Discussion Session,13:30:00,Kim,AH 300,26.0,31.0,Spring,2,2020,False,False,True,False,False
+5,MIS 2113-015,Discussion Session,15:00:00,Croes,AH 300,21.0,23.0,Spring,2,2020,False,False,True,False,False
+6,MIS 2113-017,Discussion Session,16:30:00,Marley,AH 300,24.0,25.0,Spring,2,2020,False,False,True,False,False
+7,MIS 2113-018,Discussion Session,18:00:00,Crawford,AH 300,22.0,25.0,Spring,2,2020,False,False,True,False,False
+8,MIS 2113-020,Comp Based Info Sys,13:30:00,Price,AH 150,150.0,145.0,Spring,2,2020,False,False,True,False,False
+9,MIS 2113-021,Discussion Session,09:00:00,Gil Platero,AH 300,26.0,23.0,Spring,2,2020,True,False,False,False,False
+10,MIS 2113-022,Discussion Session,10:30:00,Albert,AH 300,19.0,34.0,Spring,2,2020,True,False,False,False,False
+11,MIS 2113-023,Discussion Session,12:00:00,Gil Platero,AH 300,18.0,23.0,Spring,2,2020,True,False,False,False,False
+12,MIS 2113-024,Discussion Session,13:30:00,Marley,AH 300,16.0,43.0,Spring,2,2020,True,False,False,False,False
+13,MIS 2113-025,Discussion Session,15:00:00,Croes,AH 300,21.0,21.0,Spring,2,2020,True,False,False,False,False
+14,MIS 2113-026,Discussion Session,16:30:00,Araujo,AH 300,29.0,23.0,Spring,2,2020,True,False,False,False,False
+15,MIS 2113-028,Discussion Session,18:00:00,Araujo,AH 300,22.0,34.0,Spring,2,2020,True,False,False,False,False
+16,MIS 2113-902,Comp Based Info Sys,16:30:00,Wu,AH 101,31.0,25.0,Spring,2,2020,False,True,False,True,False
+17,MIS 3013-001,C Programming,08:30:00,Ferguson,AH 100,23.0,24.0,Spring,2,2020,True,False,True,False,True
+18,MIS 3013-002,C Programming,13:30:00,Warner,AH 101,25.0,14.0,Spring,2,2020,False,True,False,True,False
+19,MIS 3013-004,C Programming,15:00:00,Warner,AH 101,25.0,15.0,Spring,2,2020,False,True,False,True,False
+20,MIS 3013-005,C Programming,15:00:00,Carter,AH 101,15.0,26.0,Spring,2,2020,True,False,True,False,False
+21,MIS 3013-006,C Programming,11:30:00,Ferguson,AH 315,23.0,21.0,Spring,2,2020,True,False,True,False,True
+22,MIS 3033-001,JAVA Programming,11:30:00,Ratwatte,AH 112,34.0,24.0,Spring,2,2020,True,False,True,False,True
+23,MIS 3033-002,Visual Basic,15:00:00,Ratwatte,AH 100,23.0,22.0,Spring,2,2020,False,True,False,True,False
+24,MIS 3033-003,Visual Basic,15:00:00,Ratwatte,AH 100,43.0,21.0,Spring,2,2020,True,False,True,False,False
+25,MIS 3033-900,Visual Basic,16:30:00,Zheng,AH 112,21.0,26.0,Spring,2,2020,True,False,True,False,False
+26,MIS 3033-901,JAVA Programming,18:30:00,Kemp,AH 315,23.0,19.0,Spring,2,2020,False,False,False,True,False
+27,MIS 3033-902,JAVA Programming,16:30:00,Ratwatte,AH 100,34.0,18.0,Spring,2,2020,True,False,True,False,False
+28,MIS 3353-001,Databases,10:30:00,Carte,AH 311,25.0,16.0,Spring,2,2020,False,True,False,True,False
+29,MIS 3353-002,Databases,12:00:00,Carte,AH 311,27.0,21.0,Spring,2,2020,False,True,False,True,False
+30,MIS 3353-003,Databases,13:30:00,Araujo,AH 100,41.0,29.0,Spring,2,2020,True,False,True,False,False
+31,MIS 3353-901,Databases,16:30:00,Carte,AH 315,35.0,22.0,Spring,2,2020,False,True,False,True,False
+32,MIS 3363-001,Infrastructure,13:30:00,Carter,AH 101,23.0,11.0,Spring,2,2020,True,False,True,False,False
+33,MIS 3363-002,Infrastructure,13:30:00,Croes,AH 355,28.0,14.0,Spring,2,2020,False,True,False,True,False
+34,MIS 3363-003,Infrastructure,15:00:00,Warner,AH 104,21.0,21.0,Spring,2,2020,True,False,True,False,False
+35,MIS 3363-900,Infrastructure,18:30:00,Wu,AH 311,23.0,21.0,Spring,2,2020,False,False,False,True,False
+36,MIS 3373-002,Systems Theory,09:00:00,Miranda,AH 101,26.0,12.0,Spring,2,2020,False,True,False,True,False
+37,MIS 3373-003,Systems Theory,13:30:00,Shaft,AH 112,21.0,11.0,Spring,2,2020,True,False,True,False,False
+38,MIS 3373-004,Systems Theory,15:00:00,Shaft,AH 112,29.0,15.0,Spring,2,2020,True,False,True,False,False
+39,MIS 3373-900,Systems Theory,16:30:00,Sharma,AH 355,30.0,17.0,Spring,2,2020,True,False,True,False,False
+40,MIS 4213-001,Prototyping & Rapid Appl Dev.,13:30:00,Schwarzkopf,AH 100,23.0,21.0,Spring,2,2020,False,True,False,True,False
+41,MIS 4663-900,Systems Project,18:30:00,Kemp,AH 150,140.0,160.0,Spring,2,2020,True,False,False,False,False
+42,MIS 4663-901,Systems Project,18:30:00,Kemp,AH 150,19.0,21.0,Spring,2,2020,True,False,False,False,False
+43,MIS 4663-902,Systems Project,18:30:00,Schwarzkopf,AH 150,150.0,140.0,Spring,2,2020,True,False,False,False,False
+44,MIS 4663-903,Systems Project,16:30:00,Price,AH 255,120.0,74.0,Spring,2,2020,True,False,False,False,False
+45,MIS 4663-904,Systems Project,16:30:00,Ferguson,AH 255,102.0,45.0,Spring,2,2020,True,False,False,False,False
+46,MIS 4710-901,Knowledge Management,18:30:00,Miranda,AH 100,25.0,21.0,Spring,2,2020,False,False,False,True,False
+47,MIS 5003-930,Sem-Mgt Info Systems,18:30:00,Sharma,OKC,32.0,25.0,Spring,2,2020,False,True,False,False,False
+48,MIS 5203-900,Sys Arch & Design,18:30:00,Schwarzkopf,AH 311,23.0,31.0,Spring,2,2020,True,False,False,False,False
+49,MIS 5323-900,Project Management,18:30:00,Shaft,AH 311,29.0,31.0,Spring,2,2020,False,False,True,False,False
+50,MIS 5403-900,IT Enabled E-Business,18:30:00,Zmud,AH 304,56.0,45.0,Spring,2,2020,False,True,False,False,False
+51,MIS 6743-001,Computer Mediated Comm,12:00:00,Chidambaram,AH 352,23.0,22.0,Spring,2,2020,True,False,False,False,False
+0,MIS 2113-001,Comp Based Info Sys,09:20:00,Ferguson,AH 104,35.0,31.0,Summer,3,2019,False,False,True,True,True
+1,MIS 2113-002,Comp Based Info Sys,10:30:00,Ferguson,AH 104,44.0,22.0,Summer,3,2019,False,False,True,True,True
+2,MIS 2113-003,Comp Based Info Sys,11:40:00,Ratwatte,AH 304,50.0,54.0,Summer,3,2019,True,True,True,True,True
+3,MIS 2113-910,Comp Based Info Sys,17:30:00,Berry,AH 104,32.0,29.0,Summer,3,2019,True,True,True,True,True
+4,MIS 3013-001,C Programmimg,12:50:00,Warner,AH 101,30.0,17.0,Summer,3,2019,True,True,True,True,True
+5,MIS 3013-002,C Programmimg,14:00:00,Warner,AH 101,23.0,21.0,Summer,3,2019,True,True,True,True,True
+6,MIS 3033-001,Visual Basic,14:00:00,Ratwatte,AH 104,35.0,32.0,Summer,3,2019,True,True,True,True,True
+7,MIS 3033-002,JAVA,10:30:00,Acevedo,AH 304,50.0,59.0,Summer,3,2019,True,True,True,True,True
+8,MIS 3033-003,JAVA,12:50:00,Jones,AH 304,45.0,54.0,Summer,3,2019,True,True,True,True,True
+9,MIS 3353-100,Databases,08:10:00,Kemp,AH 355,32.0,29.0,Summer,3,2019,True,True,True,True,True
+10,MIS 3353-001,Databases,10:30:00,Araujo,AH 101,22.0,28.0,Summer,3,2019,True,True,True,True,True
+11,MIS 3363-200,Infrastructure,15:10:00,Schwarzkopf,AH 315,25.0,41.0,Summer,3,2019,True,True,True,True,False
+12,MIS 3373-200,Systems Theory,10:30:00,Kemp,AH 315,42.0,25.0,Summer,3,2019,True,True,True,True,True
+13,MIS 4710-100,Digital Media,12:30:00,Williams,AH 300,23.0,31.0,Summer,3,2019,True,True,True,True,True
+14,MIS 5973-200,Infrastructure,15:10:00,Schwarzkopf,AH 101,29.0,31.0,Summer,3,2019,True,True,True,True,False
+0,MIS 2113-001,Comp Based Info Sys,09:20:00,Ferguson,AH 104,35.0,36.0,Summer,3,2020,True,True,True,True,True
+1,MIS 2113-002,Comp Based Info Sys,10:30:00,Ferguson,AH 104,33.0,32.0,Summer,3,2020,True,True,True,True,True
+2,MIS 2113-003,Comp Based Info Sys,11:40:00,Wu,AH 112,34.0,24.0,Summer,3,2020,True,True,True,True,True
+3,MIS 3013-200,C Programming,12:50:00,Warner,AH 101,34.0,24.0,Summer,3,2020,True,True,True,True,True
+4,MIS 3033-001,JAVA Programming,10:30:00,Ratwatte,AH 104,32.0,22.0,Summer,3,2020,True,True,True,True,True
+5,MIS 3033-002,Visual Basic Programming,12:50:00,Ratwatte,AH 304,64.0,41.0,Summer,3,2020,True,True,True,True,True
+6,MIS 3353-100,Database,09:20:00,Kemp,AH 355,23.0,26.0,Summer,3,2020,True,True,True,True,True
+7,MIS 3363-200,Infrastructure,15:10:00,Schwarzkopf,AH 315,23.0,39.0,Summer,3,2020,True,True,True,True,False
+8,MIS 3373-100,Systems Theory,10:30:00,Kemp,AH 315,32.0,35.0,Summer,3,2020,True,True,True,True,True
+9,MIS 5973-200,Infrastructure,15:10:00,Schwarzkopf,AH 315,31.0,30.0,Summer,3,2020,True,True,True,True,False
