@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/19/2022 12:34:36 AM"
@@ -11,24 +11,24 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{E12EDD87-119C-47F4-8F83-2A2627400C92}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{FDC37F08-C8A8-48AE-BE0D-1E4D0DEAFD86}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Contenedor de secuencias"
+      DTS:refId="Package\Contenedor Dimensiones"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
       DTS:DTSID="{5FD8BC0E-F809-4EAE-B7D0-394DE9629578}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Contenedor de secuencias">
+      DTS:ObjectName="Contenedor Dimensiones">
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\dim_cursos Task"
+          DTS:refId="Package\Contenedor Dimensiones\dim_cursos Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{9C2BA422-0CDD-40A7-876C-8E7A4D9BDC38}"
@@ -45,7 +45,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\dim_instructor Task"
+          DTS:refId="Package\Contenedor Dimensiones\dim_instructor Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{49E8B86F-29DE-4B17-93B1-6888DDB180FE}"
@@ -62,7 +62,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\dim_sala Task"
+          DTS:refId="Package\Contenedor Dimensiones\dim_sala Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{8852588E-E47F-4BF6-BCF2-4F123A3E0EE9}"
@@ -79,7 +79,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\dim_tiempo Task"
+          DTS:refId="Package\Contenedor Dimensiones\dim_tiempo Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{E0992901-9DF7-42A8-B1A4-1944B97CBFB9}"
@@ -98,29 +98,29 @@
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción]"
+          DTS:refId="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
           DTS:DTSID="{45D43346-DB0A-4AE7-8FD9-8E556FCA9E81}"
-          DTS:From="Package\Contenedor de secuencias\dim_cursos Task"
+          DTS:From="Package\Contenedor Dimensiones\dim_cursos Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
-          DTS:To="Package\Contenedor de secuencias\dim_instructor Task" />
+          DTS:To="Package\Contenedor Dimensiones\dim_instructor Task" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 1]"
+          DTS:refId="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción 1]"
           DTS:CreationName=""
           DTS:DTSID="{342F2868-804E-47C7-A59F-27AFA459692E}"
-          DTS:From="Package\Contenedor de secuencias\dim_instructor Task"
+          DTS:From="Package\Contenedor Dimensiones\dim_instructor Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 1"
-          DTS:To="Package\Contenedor de secuencias\dim_sala Task" />
+          DTS:To="Package\Contenedor Dimensiones\dim_sala Task" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 2]"
+          DTS:refId="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción 2]"
           DTS:CreationName=""
           DTS:DTSID="{842B12FD-86D7-414E-9DA0-3E64B56DEB40}"
-          DTS:From="Package\Contenedor de secuencias\dim_sala Task"
+          DTS:From="Package\Contenedor Dimensiones\dim_sala Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción 2"
-          DTS:To="Package\Contenedor de secuencias\dim_tiempo Task" />
+          DTS:To="Package\Contenedor Dimensiones\dim_tiempo Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -138,22 +138,22 @@
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="156.8,41.6"
-          Id="Package\Contenedor de secuencias\dim_cursos Task"
+          Id="Package\Contenedor Dimensiones\dim_cursos Task"
           TopLeft="12.7,5.49999999999995" />
         <NodeLayout
           Size="171.2,41.6"
-          Id="Package\Contenedor de secuencias\dim_instructor Task"
+          Id="Package\Contenedor Dimensiones\dim_instructor Task"
           TopLeft="5.50000000000001,107.1" />
         <NodeLayout
           Size="144.8,41.6"
-          Id="Package\Contenedor de secuencias\dim_sala Task"
+          Id="Package\Contenedor Dimensiones\dim_sala Task"
           TopLeft="18.7,208.7" />
         <NodeLayout
           Size="159.2,41.6"
-          Id="Package\Contenedor de secuencias\dim_tiempo Task"
+          Id="Package\Contenedor Dimensiones\dim_tiempo Task"
           TopLeft="11.5,310.3" />
         <EdgeLayout
-          Id="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción]"
+          Id="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción]"
           TopLeft="91.1,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -175,7 +175,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 1]"
+          Id="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción 1]"
           TopLeft="91.1,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -197,7 +197,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción 2]"
+          Id="Package\Contenedor Dimensiones.PrecedenceConstraints[Restricción 2]"
           TopLeft="91.1,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -223,8 +223,8 @@
           IsExpanded="True"
           PanelSize="182.4,407.2"
           Size="182.4,450.4"
-          Id="Package\Contenedor de secuencias"
-          TopLeft="143.571431016435,102.470589672405" />
+          Id="Package\Contenedor Dimensiones"
+          TopLeft="143.571431016435,86.4117659177743" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
