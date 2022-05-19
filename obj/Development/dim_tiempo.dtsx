@@ -11,30 +11,11 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{F8277BDB-9BFD-4DF0-A166-234142CA3CE8}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{195D1068-CAE8-4EE4-B473-C4C8BE54B6DC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{A07BA0A8-CBD3-4E35-8A2E-33096FD7EDB9}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="fechaDesde">
-      <DTS:VariableValue
-        DTS:DataType="8">"20100101"</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{758A247D-1A9C-417F-A76C-31F375ACC79F}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="fechaHasta">
-      <DTS:VariableValue
-        DTS:DataType="8">"20291231"</DTS:VariableValue>
-    </DTS:Variable>
-  </DTS:Variables>
+  <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Contenedor de secuencias"
@@ -61,20 +42,7 @@
             <SQLTask:SqlTaskData
               SQLTask:Connection="{EFE03755-C74F-42E6-A5D1-DAD166D2F0C7}"
               SQLTask:BypassPrepare="False"
-              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo] '20100101', '20301231'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@FechaDesde"
-                SQLTask:DtsVariableName="User::fechaDesde"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@FechaHasta"
-                SQLTask:DtsVariableName="User::fechaHasta"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-            </SQLTask:SqlTaskData>
+              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo] '20100101', '20301231'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
