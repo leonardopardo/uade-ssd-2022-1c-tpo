@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{4A238EE2-E7AD-4F24-BB33-46B7FC30F984}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{B5A7E083-D71D-4690-B306-B132E66063A0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -112,6 +112,937 @@
         <pipeline
           version="1">
           <components>
+            <component
+              refId="Package\Course Capacity Task\Componente de script"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;12"
+              description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
+              name="Componente de script"
+              version="12">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Almacena el código fuente del componente"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Entrada 0", StringComparison.Ordinal))
+        {
+            Entrada0_ProcessInput(new Entrada0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Entrada0_ProcessInput(Entrada0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Entrada0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Entrada0_ProcessInputRow(Entrada0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Entrada0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Entrada0_ProcessInputRow(Entrada0Buffer Row)
+    {
+        var splitResult = Row.CopiadeSeason.Split(' ');
+
+        Row.SeasonName = splitResult[0];
+        Row.Year = Int32.Parse(splitResult[1]);
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_38d12ef1b36b4b7c9d13f62cbda82b8b.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33281e68-8c46-42e8-abb8-55efddb297b1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_38d12ef1b36b4b7c9d13f62cbda82b8b</RootNamespace>
+    <AssemblyName>SC_38d12ef1b36b4b7c9d13f62cbda82b8b</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_38d12ef1b36b4b7c9d13f62cbda82b8b" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Settings.get_Default():SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Sett" +
+    "ings")]
+
+namespace SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Entrada0Buffer: ScriptBuffer
+
+{
+    public Entrada0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String CopiadeSeason
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool CopiadeSeason_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String SeasonName
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool SeasonName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    public Int32 Year
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool Year_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("La propiedad IsNull no puede establecerse en False. En su lugar, asigne un valor a la columna.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_38d12ef1b36b4b7c9d13f62cbda82b8b</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_38d12ef1b36b4b7c9d13f62cbda82b8b</msb:DisplayName>
+    <msb:ProjectId>{A4A400D2-53B4-4FFA-B9FD-85BEDA6C3925}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_38d12ef1b36b4b7c9d13f62cbda82b8b.csproj" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_38d12ef1b36b4b7c9d13f62cbda82b8b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("HP Inc.")]
+[assembly: AssemblyProduct("SC_38d12ef1b36b4b7c9d13f62cbda82b8b")]
+[assembly: AssemblyCopyright("Copyright @ HP Inc. 2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_38d12ef1b36b4b7c9d13f62cbda82b8b.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Almacena la representación binaria del componente"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_38d12ef1b36b4b7c9d13f62cbda82b8b.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAMy3hWIAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAA1jIA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIQyAABPAAAAAEAAAGQEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA3BIAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAGQEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAC4
+MgAAAAAAAEgAAAACAAUA/CEAANAPAAABAAAAAAAAAMwxAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAUALwAAAAEAABEDbwYAAAYX
+jRoAAAElFh8gnW8SAAAKCgMGFppvCAAABgMGF5ooEwAACm8KAAAGKh4CKA4AAAYqKgIDBAUoFAAA
+CipSAnsVAAAKAnsWAAAKFpRvFwAACioiAhYoGAAACiomAhcDKBkAAAoqWgMsCAIXKBoAAAoqcgEA
+AHBzGwAACno6AhgDjBwAAAEoGQAACipaAywIAhgoGgAACipyAQAAcHMbAAAKeh4CKBwAAAoqHgIo
+HQAACip+AigeAAAKAgJzEgAABn0BAAAEAgJzEwAABn0CAAAEKpIEcsAAAHAabx8AAAosFQIFAgMo
+IAAACg4EcwUAAAZvEAAABipKKwcCA28RAAAGA28MAAAGLfEqBio6AighAAAKAgN9AwAABCo6Aigh
+AAAKAgN9BAAABCoeAighAAAKKq5+BQAABC0ectQAAHDQBwAAAigiAAAKbyMAAApzJAAACoAFAAAE
+fgUAAAQqGn4GAAAEKh4CgAYAAAQqGn4HAAAEKh4CKCUAAAoqLnMZAAAGgAcAAAQqAAAAQlNKQgEA
+AQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAxAUAACN+AAAwBgAAfAYAACNTdHJpbmdzAAAA
+AKwMAABIAQAAI1VTAPQNAAAQAAAAI0dVSUQAAAAEDgAAzAEAACNCbG9iAAAAAAAAAAIAAAFXFaIB
+CQEAAAD6ATMAFgAAAQAAACEAAAAIAAAABwAAABoAAAARAAAAJQAAABAAAAABAAAAAwAAAAkAAAAK
+AAAAAQAAAAQAAAABAAAAAAAIAwEAAAAAAAYA/wGoBAYAkwKoBAYASwGVBA8AHAUAAAYAeAHIAwYA
+4gHIAwYAwwHIAwYAegLIAwYAHwLIAwYAOALIAwYAjwHIAwYAqgHOAgoAUwKSAAoAZwSSAA4AWASS
+AAoAIwSSAAoA6AWSAAYApQWAAwYALgGVBAYAeATIBAYAFwSzAxIA/gDyAhIAXwHyAhIA4ACeAwYA
+EwGoBAYARASAAwYA6wKAAwYAAQCAAwYA2gOAAwYABgSAAwYAswCAAwYAVQCAAwYAcQbIAwAAAAAH
+AAAAAAABAAEAAQAQAJMDAAAQAAEAAQABABAASQQAADkAAQAFAAEAEADKBQAARQABAA4AAQAQAJkF
+AABJAAMAEgABABAAWgUAAEkABAATAAAAEADPBCsFSQAFABQAAAEQAIkFKwVhAAcAGAAGAJkFhwAG
+AFoFiwABANgFjwABANgFjwARAIcDkwARANAAlwARAEUAmwBQIAAAAADGALECBgABAFggAAAAAMYA
+vAIGAAEAYCAAAAAAxgBMBp8AAQCbIAAAAACGGIgEBgACAKMgAAAAAIYYiAQsAAIAriAAAAAAhgj0
+A6UABQDDIAAAAACGCEYDTgAFAMwgAAAAAIYIeQAQAAUA1iAAAAAAhggwA6kABgDtIAAAAACGCDsE
+AQAHAPwgAAAAAIYIXwOpAAgAEyEAAAAAhgBlBk4ACQAbIQAAAACGAKwFTgAJACMhAAAAAIYYiAQG
+AAkAQyEAAAAAxgA/Bq4ACQBoIQAAAADGATYGnwANAHshAAAAAMYBTAafAA4AfSEAAAAAhhiIBLgA
+DwCMIQAAAACGGIgEuAAQAJshAAAAAIMYiAQGABEAoyEAAAAAkwh0BL4AEQDPIQAAAACTCLgAwwAR
+ANYhAAAAAJMIxADIABEA3iEAAAAAlgi+Bc4AEgDlIQAAAACGGIgEBgASAO0hAAAAAJEYjgTTABIA
+AAABAGkGAAABAG0EAAACAGQFAAADADEEAAABAMgCAAABAMgCAAABAMgCAAABAMgCAAABABAAAAAC
+AIgAAAADAG0EAAAEADEEAAABAG0EAAABAGkGAAABAO4FAAABAO4FAAABAMgCCQCIBAEAEQCIBAYA
+GQCIBAoAKQCIBBAAMQCIBBAAOQCIBBAAQQCIBBAASQCIBBAAUQCIBBAAWQCIBBAAYQCIBBAAaQCI
+BAYAmQCIBAYAuQCIBBUAyQCIBAYAiQCxAgYAiQC8AgYA2QC4BSAA4QD4ACcAcQCIBCwAcQBtBDYA
+cQBkBToAeQDoAj4AcQBoA0MAcQB3A0gAcQBvAwEA6QCIBBAAcQBlBk4AcQCsBU4AiQCIBAYA2QCS
+BVIAiQB4BVkAkQCIBAYA+QBnAF8A+QBtBmcAoQCIBG0AwQCIBAYALgALAPIALgATAPsALgAbABoB
+LgAjACMBLgArAEwBLgAzAEwBLgA7AFIBLgBDACMBLgBLAF8BLgBTAEwBLgBbAH0BQwBjAMcB4QB7
+AMcB4wBrAMcB6QBzABoBCQFzABoBGwADAAEABwAHAAgACQAAAPgD1wAAAEoD2wAAAH0A1wAAADQD
+2wAAAD8E3wAAAGMD2wAAAHgE4wAAANgA6AAAAMIF7QACAAYAAwACAAcABQABAAgABwABAAkACQAB
+AAoACwABAAsADQACABUADwACABYAEQABABcAEQACABgAEwAEgAAAAQAAAAAAAAAAAAAAAAAYAAAA
+BAAAAAAAAAAAAAAAdQA8AAAAAAAPAAAAAAAAAAAAAAB+APgFAAAAAA8AAAAAAAAAAAAAAH4AFQYA
+AAAABAAAAAAAAAAAAAAAdQCAAwAAAAAAAAAAAQAAANkEAAAAAAAAAEludDMyADxNb2R1bGU+AElu
+cHV0SUQAU0NfMzhkMTJlZjFiMzZiNGI3YzlkMTNmNjJjYmRhODJiOGIAbXNjb3JsaWIAZGVmYXVs
+dEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAHNldF9TZWFzb25O
+YW1lAElucHV0TmFtZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9D
+dWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFz
+ZQBQYXJzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0ZQBE
+ZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9yQnJv
+d3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1hcmtB
+dHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlvbkF0
+dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENvbXBpbGF0aW9uUmVsYXhhdGlv
+bnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0QXR0
+cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29t
+cGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0ZQBQcmVFeGVjdXRlAFBv
+c3RFeGVjdXRlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAFN5c3Rl
+bS5Db21wb25lbnRNb2RlbABTQ18zOGQxMmVmMWIzNmI0YjdjOWQxM2Y2MmNiZGE4MmI4Yi5kbGwA
+c2V0X1NlYXNvbk5hbWVfSXNOdWxsAGdldF9Db3BpYWRlU2Vhc29uX0lzTnVsbABzZXRfWWVhcl9J
+c051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0
+ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJ
+bnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAGdldF9Db3BpYWRlU2Vhc29uAFN0cmluZ0NvbXBhcmlz
+b24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAAc2V0X1llYXIAQ2hhcgBFbnRy
+YWRhMEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdl
+cgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVy
+U2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ18zOGQxMmVmMWIzNmI0YjdjOWQxM2Y2MmNiZGE4
+MmI4Yi5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfMzhk
+MTJlZjFiMzZiNGI3YzlkMTNmNjJjYmRhODJiOGIuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVy
+Q29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9u
+cwBPYmplY3QARW5kT2ZSb3dzZXQAU3BsaXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJl
+bnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQA
+TWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QARW50cmFkYTBfUHJvY2Vzc0lucHV0AEVu
+dHJhZGEwX1Byb2Nlc3NJbnB1dFJvdwBOZXh0Um93AGdldF9Bc3NlbWJseQAAAACAvUwAYQAgAHAA
+cgBvAHAAaQBlAGQAYQBkACAASQBzAE4AdQBsAGwAIABuAG8AIABwAHUAZQBkAGUAIABlAHMAdABh
+AGIAbABlAGMAZQByAHMAZQAgAGUAbgAgAEYAYQBsAHMAZQAuACAARQBuACAAcwB1ACAAbAB1AGcA
+YQByACwAIABhAHMAaQBnAG4AZQAgAHUAbgAgAHYAYQBsAG8AcgAgAGEAIABsAGEAIABjAG8AbAB1
+AG0AbgBhAC4AABNFAG4AdAByAGEAZABhACAAMAAAcVMAQwBfADMAOABkADEAMgBlAGYAMQBiADMA
+NgBiADQAYgA3AGMAOQBkADEAMwBmADYAMgBjAGIAZABhADgAMgBiADgAYgAuAFAAcgBvAHAAZQBy
+AHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAAAD/rtc1Ti8xS6eNkt9nIOeUAAQgAQEIAyAA
+AQUgAQEREQQgAQEOBSABARFZBAcBHQ4GIAEdDh0DBAABCA4JIAMBEj0dCBJBAwYSPQMGHQgEIAEO
+CAQgAQIIBSACAQgcAyAAAgYgAgIOEXkFIAEdCAgHAAESfRGAgQUgABKAhQcgAgEOEoCFCLd6XFYZ
+NOCJCImEXc2AgMyRAwYSFAMGEhgDBhJFAwYSUQMGElUDBhIgBSABARIMAyAADgQgAQECCSAEAQgO
+Ej0SQQUgAQESRQQAABJRBAAAElUFAAEBElUEAAASIAMAAAEDKAAOAygAAgMoAAgECAASUQQIABJV
+BAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEA
+I1NDXzM4ZDEyZWYxYjM2YjRiN2M5ZDEzZjYyY2JkYTgyYjhiAAAFAQAAAAAMAQAHSFAgSW5jLgAA
+HQEAGENvcHlyaWdodCBAIEhQIEluYy4gMjAyMgAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12
+NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAALQAAADO
+yu++AQAAAJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZl
+cnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5
+MzRlMDg5I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFE
+UEFEULQAAACsMgAAAAAAAAAAAADGMgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuDIAAAAAAAAA
+AAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAAAIBAAAAAAAAAAAAAAIBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAEaAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAARAMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAADAACAABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAASABQACAASQBuAGMALgAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkA
+cAB0AGkAbwBuAAAAAABTAEMAXwAzADgAZAAxADIAZQBmADEAYgAzADYAYgA0AGIANwBjADkAZAAx
+ADMAZgA2ADIAYwBiAGQAYQA4ADIAYgA4AGIAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4A
+AAAAADEALgAwAC4AMAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBf
+ADMAOABkADEAMgBlAGYAMQBiADMANgBiADQAYgA3AGMAOQBkADEAMwBmADYAMgBjAGIAZABhADgA
+MgBiADgAYgAuAGQAbABsAAAAVgAZAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBv
+AHAAeQByAGkAZwBoAHQAIABAACAASABQACAASQBuAGMALgAgADIAMAAyADIAAAAAACoAAQABAEwA
+ZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBs
+AEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADMAOABkADEAMgBlAGYAMQBiADMANgBiADQAYgA3AGMA
+OQBkADEAMwBmADYAMgBjAGIAZABhADgAMgBiADgAYgAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1
+AGMAdABOAGEAbQBlAAAAAABTAEMAXwAzADgAZAAxADIAZQBmADEAYgAzADYAYgA0AGIANwBjADkA
+ZAAxADMAZgA2ADIAYwBiAGQAYQA4ADIAYgA4AGIAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQBy
+AHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIA
+cwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAA2DIAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del proyecto de Microsoft Visual Studio Tools para Aplicaciones. Los nombres de proyecto deben ser únicos en el paquete."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_38d12ef1b36b4b7c9d13f62cbda82b8b</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el lenguaje de programación que utiliza el script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica una lista separada por comas de variables de solo lectura."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica una lista separada por comas de variables de lectura/escritura."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Lista de puntos de interrupción presentes en el script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Suma de comprobación para comparar los metadatos del componente con los códigos compilados."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">73</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Course Capacity Task\Componente de script.Inputs[Entrada 0]"
+                  hasSideEffects="true"
+                  name="Entrada 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Course Capacity Task\Componente de script.Inputs[Entrada 0].Columns[Copia de Season]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copia de Season"
+                      lineageId="Package\Course Capacity Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Season]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0]"
+                  name="Salida 0"
+                  synchronousInputId="Package\Course Capacity Task\Componente de script.Inputs[Entrada 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[SeasonName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[SeasonName]"
+                      name="SeasonName" />
+                    <outputColumn
+                      refId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[Year]"
+                      name="Year" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Course Capacity Task\Data Conversion"
               componentClassID="Microsoft.DataConvert"
@@ -632,78 +1563,6 @@
                   name="Sort Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Course]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Course"
-                      lineageId="Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Course]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Course Title]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Course Title"
-                      lineageId="Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Course Title]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Size]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Size"
-                      lineageId="Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Size]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Season]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Season"
-                      lineageId="Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Season]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Copia de Course]"
                       cachedCodepage="65001"
                       cachedDataType="str"
@@ -736,7 +1595,7 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">2</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
@@ -752,16 +1611,16 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
+                          name="NewSortKeyPosition">3</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Copia de Season]"
-                      cachedCodepage="65001"
+                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[SeasonName]"
+                      cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="Copia de Season"
-                      lineageId="Package\Course Capacity Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Season]">
+                      cachedName="SeasonName"
+                      lineageId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[SeasonName]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -770,7 +1629,23 @@
                         <property
                           dataType="System.Int32"
                           description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
+                          name="NewSortKeyPosition">5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Course Capacity Task\Sort.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">4</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -789,67 +1664,7 @@
                       dataType="str"
                       length="50"
                       lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Course]"
-                      name="Course">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Course]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Course Title]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Course Title]"
-                      name="Course Title">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Course Title]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Size]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Size]"
-                      name="Size">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Size]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Season]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Season]"
-                      name="Season">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output].Columns[Season]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Course]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Course]"
-                      name="Copia de Course"
+                      name="Course"
                       sortKeyPosition="1">
                       <properties>
                         <property
@@ -860,12 +1675,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Course Title]"
+                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Course Title]"
                       codePage="65001"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Course Title]"
-                      name="Copia de Course Title">
+                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Course Title]"
+                      name="Course Title"
+                      sortKeyPosition="2">
                       <properties>
                         <property
                           containsID="true"
@@ -875,10 +1691,11 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Size]"
+                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Size]"
                       dataType="ui4"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Size]"
-                      name="Copia de Size">
+                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Size]"
+                      name="Size"
+                      sortKeyPosition="3">
                       <properties>
                         <property
                           containsID="true"
@@ -888,19 +1705,33 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Season]"
-                      codePage="65001"
+                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Season]"
+                      codePage="1252"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Copia de Season]"
-                      name="Copia de Season"
-                      sortKeyPosition="2">
+                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Season]"
+                      name="Season"
+                      sortKeyPosition="5">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Course Capacity Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Season]}</property>
+                          name="SortColumnId">#{Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[SeasonName]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Course Capacity Task\Sort.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Course Capacity Task\Componente de script.Outputs[Salida 0].Columns[Year]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -917,7 +1748,7 @@
               startId="Package\Course Capacity Task\Data Conversion.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Course Capacity Task.Paths[Derived Column Output]"
-              endId="Package\Course Capacity Task\Sort.Inputs[Sort Input]"
+              endId="Package\Course Capacity Task\Componente de script.Inputs[Entrada 0]"
               name="Derived Column Output"
               startId="Package\Course Capacity Task\Derived Column.Outputs[Derived Column Output]" />
             <path
@@ -925,6 +1756,11 @@
               endId="Package\Course Capacity Task\Data Conversion.Inputs[Data Conversion Input]"
               name="Flat File Source Output"
               startId="Package\Course Capacity Task\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Course Capacity Task.Paths[Salida 0]"
+              endId="Package\Course Capacity Task\Sort.Inputs[Sort Input]"
+              name="Salida 0"
+              startId="Package\Course Capacity Task\Componente de script.Outputs[Salida 0]" />
             <path
               refId="Package\Course Capacity Task.Paths[Sort Output]"
               endId="Package\Course Capacity Task\Row Count.Inputs[Row Count Input 1]"
@@ -950,7 +1786,7 @@
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Course Capacity Task"
-          TopLeft="53.6714271847082,57.6647053461174" />
+          TopLeft="134.38571427355,79.0764703522917" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -958,7 +1794,15 @@
     design-time-name="Package\Course Capacity Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Course Capacity Task\Row Count"
+          TopLeft="67.1428582862932,551.352948908988" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Course Capacity Task\Derived Column"
+          TopLeft="57.8571438424441,217.941179527131" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Course Capacity Task\Flat File Source"
@@ -989,10 +1833,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Course Capacity Task\Derived Column"
-          TopLeft="57.8571438424441,217.941179527131" />
         <EdgeLayout
           Id="Package\Course Capacity Task.Paths[Data Conversion Output]"
           TopLeft="133.785715252769,163.188236999347">
@@ -1016,23 +1856,23 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Course Capacity Task\Sort"
-          TopLeft="86.4285729004413,317.352945627226" />
+          Size="181.6,41.6"
+          Id="Package\Course Capacity Task\Componente de script"
+          TopLeft="42.8571435869956,324.035297753324" />
         <EdgeLayout
           Id="Package\Course Capacity Task.Paths[Derived Column Output]"
-          TopLeft="134.742858371443,259.541179527131">
+          TopLeft="133.95714371472,259.541179527131">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,57.8117661000946"
+              EndConnector="0,64.4941182261932"
               Start="0,0"
-              End="0,50.3117661000946">
+              End="0,56.9941182261932">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.3117661000946" />
+                    End="0,56.9941182261932" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1042,29 +1882,53 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Course Capacity Task\Row Count"
-          TopLeft="72.1428583714426,423.64706476502" />
+          Size="97.6,41.6"
+          Id="Package\Course Capacity Task\Sort"
+          TopLeft="78.5714299094921,438.117652249584" />
         <EdgeLayout
-          Id="Package\Course Capacity Task.Paths[Sort Output]"
-          TopLeft="136.085715635942,358.952945627226">
+          Id="Package\Course Capacity Task.Paths[Salida 0]"
+          TopLeft="130.514286748244,365.635297753324">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,64.6941191377939"
+              EndConnector="0,72.4823544962596"
               Start="0,0"
-              End="0,57.1941191377939">
+              End="0,64.9823544962596">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,57.1941191377939" />
+                    End="0,64.9823544962596" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Course Capacity Task.Paths[Sort Output]"
+          TopLeft="129.657144097893,479.717652249584">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.6352966594042"
+              Start="0,0"
+              End="0,64.1352966594042">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.1352966594042" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,24.0676483297021,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

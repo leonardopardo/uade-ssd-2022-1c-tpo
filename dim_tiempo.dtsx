@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{C68DB45A-513B-49E9-93C0-3B1328DED74C}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{195D1068-CAE8-4EE4-B473-C4C8BE54B6DC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -42,20 +42,7 @@
             <SQLTask:SqlTaskData
               SQLTask:Connection="{EFE03755-C74F-42E6-A5D1-DAD166D2F0C7}"
               SQLTask:BypassPrepare="False"
-              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo] '20100101', '20301231'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@FechaDesde"
-                SQLTask:DtsVariableName="User::fechaDesde"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-              <SQLTask:ParameterBinding
-                SQLTask:ParameterName="@FechaHasta"
-                SQLTask:DtsVariableName="User::fechaHasta"
-                SQLTask:ParameterDirection="Input"
-                SQLTask:DataType="129"
-                SQLTask:ParameterSize="-1" />
-            </SQLTask:SqlTaskData>
+              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo] '20100101', '20301231'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
