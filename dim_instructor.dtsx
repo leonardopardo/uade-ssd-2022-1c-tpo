@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{531D4A84-F5CC-4A68-98CB-36D90B85A48B}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{A7867181-FECA-455D-8E6D-8B789A3C2947}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -106,11 +106,6 @@
                       name="Data Conversion Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input].Columns[Instructor_Nu]"
-                          cachedDataType="r8"
-                          cachedName="Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]" />
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input].Columns[Instructor]"
                           cachedDataType="wstr"
                           cachedLength="255"
@@ -141,11 +136,6 @@
                           cachedDataType="cy"
                           cachedName="Commission"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]" />
-                        <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input].Columns[Hiring_date]"
-                          cachedDataType="date"
-                          cachedName="Hiring_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input].Columns[ZipCode]"
                           cachedDataType="r8"
@@ -180,26 +170,6 @@
                       name="Data Conversion Output"
                       synchronousInputId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input]">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]"
-                          name="Copia de Instructor_Nu"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the input column used as the source of data for the conversion."
-                              name="SourceInputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]}</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                          </properties>
-                        </outputColumn>
                         <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]"
                           codePage="1252"
@@ -316,26 +286,6 @@
                               dataType="System.Int32"
                               description="Specifies the input column used as the source of data for the conversion."
                               name="SourceInputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]}</property>
-                            <property
-                              dataType="System.Boolean"
-                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                              name="FastParse">false</property>
-                          </properties>
-                        </outputColumn>
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]"
-                          dataType="date"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]"
-                          name="Copia de Hiring_date"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the input column used as the source of data for the conversion."
-                              name="SourceInputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]}</property>
                             <property
                               dataType="System.Boolean"
                               description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -678,12 +628,6 @@
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[codigo]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor_Nu]" />
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].Columns[Copia de Instructor]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -692,11 +636,11 @@
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor]" />
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].Columns[Copia de Hiring_date]"
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].Columns[Hiring_date]"
                           cachedDataType="date"
-                          cachedName="Copia de Hiring_date"
+                          cachedName="Hiring_date"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[fecha_contratacion]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Hiring_date]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Hiring_date]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].Columns[Copia de Born_date]"
                           cachedDataType="i4"
@@ -772,10 +716,6 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[id]"
                           dataType="i4"
                           name="id" />
-                        <externalMetadataColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[codigo]"
-                          dataType="i4"
-                          name="codigo" />
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
                           codePage="1252"
@@ -884,7 +824,7 @@
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [DW].[dim_profesor] SET [fecha_fin] = ? WHERE [codigo] = ? AND [fecha_fin] IS NULL</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [DW].[dim_profesor] SET [fecha_fin] = ? WHERE [nombre] = ? AND [fecha_fin] IS NULL</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -907,11 +847,13 @@
                       name="OLE DB Command Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[Copia de Instructor]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copia de Instructor"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[fecha_fin]"
                           cachedDataType="dbTimeStamp"
@@ -929,18 +871,20 @@
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">1</property>
+                              name="DBParamInfoFlags">65</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          dataType="i4"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
                           name="Param_1">
                           <properties>
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">1</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -996,7 +940,7 @@
                       description="The SQL command to be executed."
                       expressionType="Notify"
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [DW].[dim_profesor] SET [calle] = ?,[cantidad_grupo_familiar] = ?,[cantidad_hijos] = ?,[ciudad] = ?,[comision] = ?,[estado] = ?,[fecha_contratacion] = ?,[fecha_nacimiento] = ?,[nombre] = ?,[razon] = ?,[zip] = ? WHERE [codigo] = ?</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [DW].[dim_profesor] SET [calle] = ?,[cantidad_grupo_familiar] = ?,[cantidad_hijos] = ?,[ciudad] = ?,[comision] = ?,[estado] = ?,[fecha_contratacion] = ?,[fecha_nacimiento] = ?,[razon] = ?,[zip] = ? WHERE [nombre] = ?</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1047,12 +991,6 @@
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]" />
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]" />
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Commission]"
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
@@ -1067,11 +1005,11 @@
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]" />
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Hiring_date]"
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Hiring_date]"
                           cachedDataType="date"
-                          cachedName="Copia de Hiring_date"
+                          cachedName="Hiring_date"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Born_date]"
                           cachedDataType="i4"
@@ -1084,13 +1022,13 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de Instructor"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de CommissionRate]"
                           cachedDataType="r8"
                           cachedName="Copia de CommissionRate"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
+                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de ZipCode]"
@@ -1098,7 +1036,7 @@
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Copia de ZipCode"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
+                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]" />
                       </inputColumns>
                       <externalMetadataColumns
@@ -1199,50 +1137,39 @@
                         </externalMetadataColumn>
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
+                          dataType="r8"
                           name="Param_8">
                           <properties>
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">1</property>
+                              name="DBParamInfoFlags">17</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
-                          dataType="r8"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="Param_9">
                           <properties>
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
+                              name="DBParamInfoFlags">1</property>
                           </properties>
                         </externalMetadataColumn>
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="255"
                           name="Param_10">
                           <properties>
                             <property
                               dataType="System.Int32"
                               description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
                               name="DBParamInfoFlags">1</property>
-                          </properties>
-                        </externalMetadataColumn>
-                        <externalMetadataColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_11]"
-                          dataType="i4"
-                          name="Param_11">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                              name="DBParamInfoFlags">17</property>
                           </properties>
                         </externalMetadataColumn>
                       </externalMetadataColumns>
@@ -1308,12 +1235,6 @@
                       refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output]"
                       name="Raw File Source Output">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]"
-                          dataType="r8"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].ExternalColumns[Instructor_Nu]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]"
-                          name="Instructor_Nu" />
                         <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor]"
                           dataType="wstr"
@@ -1388,10 +1309,6 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].ExternalColumns[Instructor_Nu]"
-                          dataType="r8"
-                          name="Instructor_Nu" />
-                        <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].ExternalColumns[Instructor]"
                           dataType="wstr"
                           length="255"
@@ -1455,7 +1372,7 @@
                       dataType="System.String"
                       description="Specifies the SELECT statement used to create a schema rowset."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [calle], [cantidad_grupo_familiar], [cantidad_hijos], [ciudad], [codigo], [comision], [estado], [nombre], [razon], [zip],[fecha_inicio],[fecha_fin] FROM [DW].[dim_profesor]</property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [calle], [cantidad_grupo_familiar], [cantidad_hijos], [ciudad], [comision], [estado], [nombre], [razon], [zip],[fecha_inicio],[fecha_fin] FROM [DW].[dim_profesor]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
@@ -1560,19 +1477,6 @@
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[codigo]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              name="ColumnType"
-                              typeConverter="ColumnType">1</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Copia de Commission]"
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
@@ -1612,7 +1516,7 @@
                             <property
                               dataType="System.Int32"
                               name="ColumnType"
-                              typeConverter="ColumnType">3</property>
+                              typeConverter="ColumnType">1</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -1666,10 +1570,6 @@
                           dataType="str"
                           length="255"
                           name="ciudad" />
-                        <externalMetadataColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[codigo]"
-                          dataType="i4"
-                          name="codigo" />
                         <externalMetadataColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[comision]"
                           dataType="r8"
@@ -1770,19 +1670,6 @@
                       refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1]"
                       name="Union All Input 1">
                       <inputColumns>
-                        <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Instructor_Nu]"
-                          cachedDataType="r8"
-                          cachedName="Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Instructor_Nu]}</property>
-                          </properties>
-                        </inputColumn>
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Instructor]"
                           cachedDataType="wstr"
@@ -1931,19 +1818,6 @@
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor_Nu]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Instructor]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -2024,19 +1898,6 @@
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Hiring_date]"
-                          cachedDataType="date"
-                          cachedName="Copia de Hiring_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Hiring_date]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de ZipCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -2104,19 +1965,6 @@
                       hasSideEffects="true"
                       name="Union All Input 2">
                       <inputColumns>
-                        <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Instructor_Nu]"
-                          cachedDataType="r8"
-                          cachedName="Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor_Nu]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Instructor_Nu]}</property>
-                          </properties>
-                        </inputColumn>
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Instructor]"
                           cachedDataType="wstr"
@@ -2265,19 +2113,6 @@
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Instructor_Nu]"
-                          cachedDataType="i4"
-                          cachedName="Copia de Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor_Nu]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Instructor]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -2358,19 +2193,6 @@
                           </properties>
                         </inputColumn>
                         <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Hiring_date]"
-                          cachedDataType="date"
-                          cachedName="Copia de Hiring_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Output column lineage ID"
-                              name="OutputColumnLineageID">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Hiring_date]}</property>
-                          </properties>
-                        </inputColumn>
-                        <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de ZipCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
@@ -2447,11 +2269,6 @@
                       name="Union All Output 1">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Instructor_Nu]"
-                          dataType="r8"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Instructor_Nu]"
-                          name="Instructor_Nu" />
-                        <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Instructor]"
                           dataType="wstr"
                           length="255"
@@ -2511,11 +2328,6 @@
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Street]"
                           name="Street" />
                         <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor_Nu]"
-                          dataType="i4"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor_Nu]"
-                          name="Copia de Instructor_Nu" />
-                        <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Instructor]"
                           codePage="1252"
                           dataType="str"
@@ -2547,11 +2359,6 @@
                           dataType="r8"
                           lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Commission]"
                           name="Copia de Commission" />
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Hiring_date]"
-                          dataType="date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de Hiring_date]"
-                          name="Copia de Hiring_date" />
                         <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Outputs[Union All Output 1].Columns[Copia de ZipCode]"
                           codePage="1252"
@@ -2703,15 +2510,6 @@
                       refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output]"
                       name="Excel Source Output">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output].Columns[Instructor_Nu]"
-                          dataType="r8"
-                          errorOrTruncationOperation="Conversion"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output].ExternalColumns[Instructor_Nu]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output].Columns[Instructor_Nu]"
-                          name="Instructor_Nu"
-                          truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output].Columns[Instructor]"
                           dataType="wstr"
@@ -2877,11 +2675,6 @@
                       isErrorOut="true"
                       name="Excel Source Error Output">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Error Output].Columns[Instructor_Nu]"
-                          dataType="r8"
-                          lineageId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Error Output].Columns[Instructor_Nu]"
-                          name="Instructor_Nu" />
                         <outputColumn
                           refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Error Output].Columns[Instructor]"
                           dataType="wstr"
@@ -3264,11 +3057,6 @@
                       hasSideEffects="true"
                       name="Raw File Destination Input">
                       <inputColumns>
-                        <inputColumn
-                          refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Raw File Destination.Inputs[Raw File Destination Input].Columns[Instructor_Nu]"
-                          cachedDataType="r8"
-                          cachedName="Instructor_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source.Outputs[Excel Source Output].Columns[Instructor_Nu]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Raw File Destination.Inputs[Raw File Destination Input].Columns[Instructor]"
                           cachedDataType="wstr"
@@ -3718,110 +3506,74 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1"
-          TopLeft="291.7,310.3" />
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All"
-          TopLeft="151.9,539.5" />
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column 1"
-          TopLeft="125.7,632.099999999999" />
-        <NodeLayout
           Size="153.6,41.6"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source"
-          TopLeft="154.1,5.49999999999995" />
+          TopLeft="177.1,5.49999999999995" />
         <NodeLayout
           Size="208,41.6"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension"
-          TopLeft="126.9,208.7" />
+          TopLeft="149.9,208.7" />
         <NodeLayout
-          Size="152.8,45.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino"
-          TopLeft="128.5,735.699999999999" />
+          Size="155.2,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion"
+          TopLeft="176.3,107.1" />
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Data Conversion Output]"
+          TopLeft="253.9,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Raw File Source Output]"
+          TopLeft="253.9,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column"
           TopLeft="17.5,310.3" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion"
-          TopLeft="153.3,107.1" />
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command"
-          TopLeft="5.50000000000003,411.9" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[New Output]"
-          TopLeft="230.733333333333,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,289.2"
-              Start="0,0"
-              End="0,281.7">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,281.7" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.09138671875,135.133203125,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Inferred Member Updates Output]"
-          TopLeft="280.9,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="98,59.9999999999999"
-              Start="0,0"
-              End="98,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.506329113924"
-                    Point2="0,20.506329113924"
-                    Point3="4,20.506329113924" />
-                  <mssgle:LineSegment
-                    End="94,20.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="94,20.506329113924"
-                    Point2="98,20.506329113924"
-                    Point3="98,24.506329113924" />
-                  <mssgle:LineSegment
-                    End="98,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.40298828125,25.506329113924,148.8059765625,11.658203125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Historical Attribute Inserts Output]"
-          TopLeft="180.9,250.3">
+          TopLeft="203.9,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-87,59.9999999999999"
+              EndConnector="-110,59.9999999999999"
               Start="0,0"
-              End="-87,52.4999999999999">
+              End="-110,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3832,45 +3584,27 @@
                     Point2="0,20.506329113924"
                     Point3="-4,20.506329113924" />
                   <mssgle:LineSegment
-                    End="-83,20.506329113924" />
+                    End="-106,20.506329113924" />
                   <mssgle:CubicBezierSegment
-                    Point1="-83,20.506329113924"
-                    Point2="-87,20.506329113924"
-                    Point3="-87,24.506329113924" />
+                    Point1="-106,20.506329113924"
+                    Point2="-110,20.506329113924"
+                    Point3="-110,24.506329113924" />
                   <mssgle:LineSegment
-                    End="-87,52.4999999999999" />
+                    End="-110,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-118.55638671875,25.506329113924,150.1127734375,11.609375"
+              BoundingBox="-130.05638671875,25.506329113924,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output1]"
-          TopLeft="205.9,673.699999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,61.9999999999999"
-              Start="0,0"
-              End="0,54.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command"
+          TopLeft="5.50000000000003,411.9" />
         <EdgeLayout
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output]"
           TopLeft="90.9,351.9">
@@ -3893,70 +3627,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All"
+          TopLeft="170.9,513.5" />
         <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Data Conversion Output]"
-          TopLeft="230.9,148.7">
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[New Output]"
+          TopLeft="251.733333333333,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,263.2"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,255.7">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,255.7" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Union All Output 1]"
-          TopLeft="209.4,581.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.9999999999999"
-              Start="0,0"
-              End="0,43.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Raw File Source Output]"
-          TopLeft="230.9,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-27.09138671875,122.133203125,54.1827734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3965,32 +3661,124 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="105.333333333333,85.9999999999999"
+              EndConnector="124.333333333333,59.9999999999999"
               Start="0,0"
-              End="105.333333333333,78.4999999999999">
+              End="124.333333333333,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.9210526315789" />
+                    End="0,31.5263157894736" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,46.9210526315789"
-                    Point2="0,50.9210526315789"
-                    Point3="4,50.9210526315789" />
+                    Point1="0,31.5263157894736"
+                    Point2="0,35.5263157894736"
+                    Point3="4,35.5263157894736" />
                   <mssgle:LineSegment
-                    End="101.333333333333,50.9210526315789" />
+                    End="120.333333333333,35.5263157894736" />
                   <mssgle:CubicBezierSegment
-                    Point1="101.333333333333,50.9210526315789"
-                    Point2="105.333333333333,50.9210526315789"
-                    Point3="105.333333333333,54.9210526315789" />
+                    Point1="120.333333333333,35.5263157894736"
+                    Point2="124.333333333333,35.5263157894736"
+                    Point3="124.333333333333,39.5263157894736" />
                   <mssgle:LineSegment
-                    End="105.333333333333,78.4999999999999" />
+                    End="124.333333333333,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column 1"
+          TopLeft="149.7,615.099999999999" />
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Union All Output 1]"
+          TopLeft="230.9,555.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino"
+          TopLeft="154.5,716.699999999999" />
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output1]"
+          TopLeft="230.9,656.699999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1"
+          TopLeft="291.7,310.3" />
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Inferred Member Updates Output]"
+          TopLeft="303.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,59.9999999999999"
+              Start="0,0"
+              End="75,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="71,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71,20.506329113924"
+                    Point2="75,20.506329113924"
+                    Point3="75,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="75,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-36.90298828125,25.506329113924,148.8059765625,11.658203125"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4032,12 +3820,6 @@
       &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor_Nu]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;codigo&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;comision&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
@@ -4050,7 +3832,7 @@
       &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Hiring_date]&lt;/IdentificationString&gt;
+      &lt;IdentificationString&gt;Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;fecha_contratacion&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
       &lt;ChangeType&gt;None&lt;/ChangeType&gt;
@@ -4064,8 +3846,8 @@
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;nombre&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]&lt;/IdentificationString&gt;
@@ -4100,19 +3882,6 @@
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
