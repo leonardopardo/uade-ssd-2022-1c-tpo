@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>uade-ssd-2021-1c-tpo</Name>
-    <LastWriteTime>2022-05-19T03:37:20.7280766Z</LastWriteTime>
+    <LastWriteTime>2022-05-20T19:22:16.5567692Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>dim_cursos.dtsx</Name>
-      <LastWriteTime>2022-05-19T03:33:33.7949341Z</LastWriteTime>
+      <LastWriteTime>2022-05-20T19:43:06.9984787Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -28,7 +28,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>dim.dtsx</Name>
-      <LastWriteTime>2022-05-19T03:37:09.7838559Z</LastWriteTime>
+      <LastWriteTime>2022-05-19T03:38:42.4108451Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
