@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{326E9183-443E-42DB-AE43-DA6B410DF4E1}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{4013C4E6-851E-430A-9B1F-B2F9835B114D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -70,7 +70,7 @@
           PanelSize="253,136"
           Size="253,179"
           Id="Package\Contenedor de secuencias"
-          TopLeft="75.0000012772423,97.8823543139395" />
+          TopLeft="79.0000012772423,57.8823543139395" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
