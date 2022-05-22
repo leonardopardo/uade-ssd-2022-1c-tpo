@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{195D1068-CAE8-4EE4-B473-C4C8BE54B6DC}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{4013C4E6-851E-430A-9B1F-B2F9835B114D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -42,7 +42,7 @@
             <SQLTask:SqlTaskData
               SQLTask:Connection="{EFE03755-C74F-42E6-A5D1-DAD166D2F0C7}"
               SQLTask:BypassPrepare="False"
-              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo] '20100101', '20301231'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="EXEC [sp_pop_dim_tiempo_simple] '2010', '2030'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -61,16 +61,16 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="169.6,41.6"
+          Size="170,42"
           Id="Package\Contenedor de secuencias\Tarea Ejecutar SQL"
           TopLeft="41.9142889621307,39.0000034640817" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="252.8,136"
-          Size="252.8,179.2"
+          PanelSize="253,136"
+          Size="253,179"
           Id="Package\Contenedor de secuencias"
-          TopLeft="75.0000012772423,97.8823543139395" />
+          TopLeft="79.0000012772423,57.8823543139395" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

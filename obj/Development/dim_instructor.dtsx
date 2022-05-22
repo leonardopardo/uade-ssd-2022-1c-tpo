@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{A7867181-FECA-455D-8E6D-8B789A3C2947}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{D7C09537-5162-4C91-8134-096A17C038AD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -853,7 +853,7 @@
                           cachedLength="255"
                           cachedName="Copia de Instructor"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command.Inputs[OLE DB Command Input].Columns[fecha_fin]"
                           cachedDataType="dbTimeStamp"
@@ -969,19 +969,19 @@
                           cachedLength="255"
                           cachedName="Copia de Street"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Family_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Family_Nu"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Children_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Children_Nu"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de City]"
                           cachedCodepage="1252"
@@ -989,13 +989,13 @@
                           cachedLength="255"
                           cachedName="Copia de City"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Commission]"
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de State]"
                           cachedCodepage="1252"
@@ -1003,19 +1003,20 @@
                           cachedLength="255"
                           cachedName="Copia de State"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Hiring_date]"
                           cachedDataType="date"
                           cachedName="Hiring_date"
+                          cachedSortKeyPosition="1"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Hiring_date]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Born_date]"
                           cachedDataType="i4"
                           cachedName="Copia de Born_date"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Born_date]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Born_date]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de Instructor]"
                           cachedCodepage="1252"
@@ -1023,13 +1024,13 @@
                           cachedLength="255"
                           cachedName="Copia de Instructor"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_10]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de CommissionRate]"
                           cachedDataType="r8"
                           cachedName="Copia de CommissionRate"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]" />
                         <inputColumn
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Copia de ZipCode]"
                           cachedCodepage="1252"
@@ -1037,7 +1038,7 @@
                           cachedLength="50"
                           cachedName="Copia de ZipCode"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_9]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]" />
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1427,7 +1428,7 @@
                           cachedLength="255"
                           cachedName="Copia de Street"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[calle]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1440,7 +1441,7 @@
                           cachedDataType="i4"
                           cachedName="Copia de Family_Nu"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[cantidad_grupo_familiar]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1453,7 +1454,7 @@
                           cachedDataType="i4"
                           cachedName="Copia de Children_Nu"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[cantidad_hijos]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1468,7 +1469,7 @@
                           cachedLength="255"
                           cachedName="Copia de City"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[ciudad]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1481,7 +1482,7 @@
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[comision]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1496,7 +1497,7 @@
                           cachedLength="255"
                           cachedName="Copia de State"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[estado]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1511,7 +1512,7 @@
                           cachedLength="255"
                           cachedName="Copia de Instructor"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[nombre]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1524,7 +1525,7 @@
                           cachedDataType="r8"
                           cachedName="Copia de CommissionRate"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[razon]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1539,7 +1540,7 @@
                           cachedLength="50"
                           cachedName="Copia de ZipCode"
                           externalMetadataColumnId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[zip]"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]">
                           <properties>
                             <property
                               dataType="System.Int32"
@@ -1659,6 +1660,682 @@
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort"
+                  componentClassID="Microsoft.Sort"
+                  contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+                  name="Sort"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                      name="EliminateDuplicates">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the maximum number of threads to use for sorting."
+                      expressionType="Notify"
+                      name="MaximumThreads">-1</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input]"
+                      name="Sort Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Instructor]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Instructor"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Born_date]"
+                          cachedDataType="ui4"
+                          cachedName="Born_date"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Born_date]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Family_Nu]"
+                          cachedDataType="ui4"
+                          cachedName="Family_Nu"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Family_Nu]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Children_Nu]"
+                          cachedDataType="ui4"
+                          cachedName="Children_Nu"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Children_Nu]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[CommissionRate]"
+                          cachedDataType="r8"
+                          cachedName="CommissionRate"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[CommissionRate]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Commission]"
+                          cachedDataType="cy"
+                          cachedName="Commission"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Hiring_date]"
+                          cachedDataType="date"
+                          cachedName="Hiring_date"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">1</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[ZipCode]"
+                          cachedDataType="r8"
+                          cachedName="ZipCode"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[ZipCode]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[State]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="State"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[State]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[City]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="City"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[City]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Street]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Street"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Street]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Instructor]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copia de Instructor"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Born_date]"
+                          cachedDataType="i4"
+                          cachedName="Copia de Born_date"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Born_date]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Family_Nu]"
+                          cachedDataType="i4"
+                          cachedName="Copia de Family_Nu"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Children_Nu]"
+                          cachedDataType="i4"
+                          cachedName="Copia de Children_Nu"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de CommissionRate]"
+                          cachedDataType="r8"
+                          cachedName="Copia de CommissionRate"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Commission]"
+                          cachedDataType="r8"
+                          cachedName="Copia de Commission"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de ZipCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copia de ZipCode"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de State]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copia de State"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de City]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copia de City"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                        <inputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input].Columns[Copia de Street]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Copia de Street"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the comparison options for character data."
+                              name="NewComparisonFlags">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the sort order of the column."
+                              name="NewSortKeyPosition">0</property>
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output]"
+                      isSorted="true"
+                      name="Sort Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Instructor]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Instructor]"
+                          name="Instructor">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Born_date]"
+                          dataType="ui4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Born_date]"
+                          name="Born_date">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Born_date]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Family_Nu]"
+                          dataType="ui4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Family_Nu]"
+                          name="Family_Nu">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Family_Nu]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Children_Nu]"
+                          dataType="ui4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Children_Nu]"
+                          name="Children_Nu">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Children_Nu]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[CommissionRate]"
+                          dataType="r8"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[CommissionRate]"
+                          name="CommissionRate">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[CommissionRate]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Commission]"
+                          dataType="cy"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Commission]"
+                          name="Commission">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Hiring_date]"
+                          dataType="date"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Hiring_date]"
+                          name="Hiring_date"
+                          sortKeyPosition="1">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[ZipCode]"
+                          dataType="r8"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[ZipCode]"
+                          name="ZipCode">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[ZipCode]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[State]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[State]"
+                          name="State">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[State]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[City]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[City]"
+                          name="City">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[City]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Street]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Street]"
+                          name="Street">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Street]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]"
+                          name="Copia de Instructor">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Born_date]"
+                          dataType="i4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Born_date]"
+                          name="Copia de Born_date">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Born_date]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]"
+                          dataType="i4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]"
+                          name="Copia de Family_Nu">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]"
+                          dataType="i4"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]"
+                          name="Copia de Children_Nu">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]"
+                          dataType="r8"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]"
+                          name="Copia de CommissionRate">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]"
+                          dataType="r8"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]"
+                          name="Copia de Commission">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]"
+                          name="Copia de ZipCode">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]"
+                          name="Copia de State">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]"
+                          name="Copia de City">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]"
+                          name="Copia de Street">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the lineage identifier of the input column that is associated with this output column."
+                              name="SortColumnId">#{Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]}</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All"
                   componentClassID="Microsoft.UnionAll"
                   contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -1675,7 +2352,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="Instructor"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Instructor]">
                           <properties>
                             <property
                               containsID="true"
@@ -1688,7 +2365,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Born_date]"
                           cachedDataType="ui4"
                           cachedName="Born_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Born_date]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Born_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -1701,7 +2378,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Family_Nu]"
                           cachedDataType="ui4"
                           cachedName="Family_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Family_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Family_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -1714,7 +2391,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Children_Nu]"
                           cachedDataType="ui4"
                           cachedName="Children_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Children_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Children_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -1727,7 +2404,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[CommissionRate]"
                           cachedDataType="r8"
                           cachedName="CommissionRate"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[CommissionRate]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[CommissionRate]">
                           <properties>
                             <property
                               containsID="true"
@@ -1740,7 +2417,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Commission]"
                           cachedDataType="cy"
                           cachedName="Commission"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Commission]">
                           <properties>
                             <property
                               containsID="true"
@@ -1753,7 +2430,8 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Hiring_date]"
                           cachedDataType="date"
                           cachedName="Hiring_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]">
+                          cachedSortKeyPosition="1"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Hiring_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -1766,7 +2444,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[ZipCode]"
                           cachedDataType="r8"
                           cachedName="ZipCode"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[ZipCode]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[ZipCode]">
                           <properties>
                             <property
                               containsID="true"
@@ -1780,7 +2458,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="State"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[State]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[State]">
                           <properties>
                             <property
                               containsID="true"
@@ -1794,7 +2472,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="City"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[City]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[City]">
                           <properties>
                             <property
                               containsID="true"
@@ -1808,7 +2486,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="Street"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Street]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Street]">
                           <properties>
                             <property
                               containsID="true"
@@ -1823,7 +2501,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de Instructor"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]">
                           <properties>
                             <property
                               containsID="true"
@@ -1836,7 +2514,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Born_date]"
                           cachedDataType="i4"
                           cachedName="Copia de Born_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Born_date]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Born_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -1849,7 +2527,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Family_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Family_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -1862,7 +2540,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Children_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Children_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -1875,7 +2553,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de CommissionRate]"
                           cachedDataType="r8"
                           cachedName="Copia de CommissionRate"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]">
                           <properties>
                             <property
                               containsID="true"
@@ -1888,7 +2566,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 1].Columns[Copia de Commission]"
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]">
                           <properties>
                             <property
                               containsID="true"
@@ -1903,7 +2581,7 @@
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Copia de ZipCode"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]">
                           <properties>
                             <property
                               containsID="true"
@@ -1918,7 +2596,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de State"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]">
                           <properties>
                             <property
                               containsID="true"
@@ -1933,7 +2611,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de City"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]">
                           <properties>
                             <property
                               containsID="true"
@@ -1948,7 +2626,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de Street"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]">
                           <properties>
                             <property
                               containsID="true"
@@ -1970,7 +2648,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="Instructor"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Instructor]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Instructor]">
                           <properties>
                             <property
                               containsID="true"
@@ -1983,7 +2661,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Born_date]"
                           cachedDataType="ui4"
                           cachedName="Born_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Born_date]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Born_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -1996,7 +2674,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Family_Nu]"
                           cachedDataType="ui4"
                           cachedName="Family_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Family_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Family_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -2009,7 +2687,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Children_Nu]"
                           cachedDataType="ui4"
                           cachedName="Children_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Children_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Children_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -2022,7 +2700,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[CommissionRate]"
                           cachedDataType="r8"
                           cachedName="CommissionRate"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[CommissionRate]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[CommissionRate]">
                           <properties>
                             <property
                               containsID="true"
@@ -2035,7 +2713,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Commission]"
                           cachedDataType="cy"
                           cachedName="Commission"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Commission]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Commission]">
                           <properties>
                             <property
                               containsID="true"
@@ -2048,7 +2726,8 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Hiring_date]"
                           cachedDataType="date"
                           cachedName="Hiring_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Hiring_date]">
+                          cachedSortKeyPosition="1"
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Hiring_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -2061,7 +2740,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[ZipCode]"
                           cachedDataType="r8"
                           cachedName="ZipCode"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[ZipCode]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[ZipCode]">
                           <properties>
                             <property
                               containsID="true"
@@ -2075,7 +2754,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="State"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[State]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[State]">
                           <properties>
                             <property
                               containsID="true"
@@ -2089,7 +2768,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="City"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[City]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[City]">
                           <properties>
                             <property
                               containsID="true"
@@ -2103,7 +2782,7 @@
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="Street"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output].Columns[Street]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Street]">
                           <properties>
                             <property
                               containsID="true"
@@ -2118,7 +2797,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de Instructor"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Instructor]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Instructor]">
                           <properties>
                             <property
                               containsID="true"
@@ -2131,7 +2810,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Born_date]"
                           cachedDataType="i4"
                           cachedName="Copia de Born_date"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Born_date]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Born_date]">
                           <properties>
                             <property
                               containsID="true"
@@ -2144,7 +2823,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Family_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Family_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Family_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Family_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -2157,7 +2836,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Children_Nu]"
                           cachedDataType="i4"
                           cachedName="Copia de Children_Nu"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Children_Nu]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Children_Nu]">
                           <properties>
                             <property
                               containsID="true"
@@ -2170,7 +2849,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de CommissionRate]"
                           cachedDataType="r8"
                           cachedName="Copia de CommissionRate"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de CommissionRate]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de CommissionRate]">
                           <properties>
                             <property
                               containsID="true"
@@ -2183,7 +2862,7 @@
                           refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All.Inputs[Union All Input 2].Columns[Copia de Commission]"
                           cachedDataType="r8"
                           cachedName="Copia de Commission"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Commission]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Commission]">
                           <properties>
                             <property
                               containsID="true"
@@ -2198,7 +2877,7 @@
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Copia de ZipCode"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de ZipCode]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de ZipCode]">
                           <properties>
                             <property
                               containsID="true"
@@ -2213,7 +2892,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de State"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de State]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de State]">
                           <properties>
                             <property
                               containsID="true"
@@ -2228,7 +2907,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de City"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de City]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de City]">
                           <properties>
                             <property
                               containsID="true"
@@ -2243,7 +2922,7 @@
                           cachedDataType="str"
                           cachedLength="255"
                           cachedName="Copia de Street"
-                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copia de Street]">
+                          lineageId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output].Columns[Copia de Street]">
                           <properties>
                             <property
                               containsID="true"
@@ -2396,7 +3075,7 @@
               <paths>
                 <path
                   refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Data Conversion Output]"
-                  endId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  endId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Inputs[Sort Input]"
                   name="Data Conversion Output"
                   startId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Outputs[Data Conversion Output]" />
                 <path
@@ -2434,6 +3113,11 @@
                   endId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion.Inputs[Data Conversion Input]"
                   name="Raw File Source Output"
                   startId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source.Outputs[Raw File Source Output]" />
+                <path
+                  refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Sort Output]"
+                  endId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Sort Output"
+                  startId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort.Outputs[Sort Output]" />
                 <path
                   refId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Union All Output 1]"
                   endId="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column 1.Inputs[Derived Column Input]"
@@ -3461,11 +4145,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="269.6,41.6"
+          Size="270,42"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task"
           TopLeft="5.50000000000003,107.1" />
         <NodeLayout
-          Size="245.6,41.6"
+          Size="246,42"
           Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task"
           TopLeft="17.5,5.50000000000007" />
         <EdgeLayout
@@ -3493,8 +4177,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="280.8,204"
-          Size="280.8,247.2"
+          PanelSize="281,204"
+          Size="281,247"
           Id="Package\Procesamiento de la dimension instructores"
           TopLeft="96.4285730707402,60.4117655531346" />
       </GraphLayout>
@@ -3506,20 +4190,160 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="153.6,41.6"
+          Size="154,42"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Raw File Source"
           TopLeft="177.1,5.49999999999995" />
         <NodeLayout
-          Size="208,41.6"
+          Size="153,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino"
+          TopLeft="154.5,716.699999999999" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column"
+          TopLeft="17.5,310.3" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1"
+          TopLeft="291.7,310.3" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command"
+          TopLeft="5.50000000000003,411.9" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column 1"
+          TopLeft="149.7,615.099999999999" />
+        <NodeLayout
+          Size="208,42"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Slowly Changing Dimension"
           TopLeft="149.9,208.7" />
         <NodeLayout
-          Size="155.2,41.6"
+          Size="120,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All"
+          TopLeft="170.9,513.5" />
+        <NodeLayout
+          Size="155,42"
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Data Conversion"
           TopLeft="176.3,107.1" />
         <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Data Conversion Output]"
-          TopLeft="253.9,148.7">
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Inferred Member Updates Output]"
+          TopLeft="303.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,59.9999999999999"
+              Start="0,0"
+              End="75,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="71,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71,20.506329113924"
+                    Point2="75,20.506329113924"
+                    Point3="75,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="75,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-36.90298828125,25.506329113924,148.8059765625,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Historical Attribute Inserts Output]"
+          TopLeft="203.9,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-110,59.9999999999999"
+              Start="0,0"
+              End="-110,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.506329113924"
+                    Point2="0,20.506329113924"
+                    Point3="-4,20.506329113924" />
+                  <mssgle:LineSegment
+                    End="-106,20.506329113924" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-106,20.506329113924"
+                    Point2="-110,20.506329113924"
+                    Point3="-110,24.506329113924" />
+                  <mssgle:LineSegment
+                    End="-110,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-130.05638671875,25.506329113924,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output1]"
+          TopLeft="230.9,656.699999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output]"
+          TopLeft="90.9,351.9">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Union All Output 1]"
+          TopLeft="230.9,555.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3561,100 +4385,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column"
-          TopLeft="17.5,310.3" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Historical Attribute Inserts Output]"
-          TopLeft="203.9,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-110,59.9999999999999"
-              Start="0,0"
-              End="-110,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.506329113924"
-                    Point2="0,20.506329113924"
-                    Point3="-4,20.506329113924" />
-                  <mssgle:LineSegment
-                    End="-106,20.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-106,20.506329113924"
-                    Point2="-110,20.506329113924"
-                    Point3="-110,24.506329113924" />
-                  <mssgle:LineSegment
-                    End="-110,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-130.05638671875,25.506329113924,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command"
-          TopLeft="5.50000000000003,411.9" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output]"
-          TopLeft="90.9,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="120,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Union All"
-          TopLeft="170.9,513.5" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[New Output]"
-          TopLeft="251.733333333333,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,263.2"
-              Start="0,0"
-              End="0,255.7">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,255.7" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.09138671875,122.133203125,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[OLE DB Command Output]"
           TopLeft="87.9,453.5">
@@ -3689,96 +4419,88 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Derived Column 1"
-          TopLeft="149.7,615.099999999999" />
         <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Union All Output 1]"
-          TopLeft="230.9,555.1">
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[New Output]"
+          TopLeft="251.733333333333,250.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,263.2"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,255.7">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Insertar destino"
-          TopLeft="154.5,716.699999999999" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Derived Column Output1]"
-          TopLeft="230.9,656.699999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\OLE DB Command 1"
-          TopLeft="291.7,310.3" />
-        <EdgeLayout
-          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Inferred Member Updates Output]"
-          TopLeft="303.9,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75,59.9999999999999"
-              Start="0,0"
-              End="75,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.506329113924"
-                    Point2="0,20.506329113924"
-                    Point3="4,20.506329113924" />
-                  <mssgle:LineSegment
-                    End="71,20.506329113924" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71,20.506329113924"
-                    Point2="75,20.506329113924"
-                    Point3="75,24.506329113924" />
-                  <mssgle:LineSegment
-                    End="75,52.4999999999999" />
+                    End="0,255.7" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-36.90298828125,25.506329113924,148.8059765625,11.658203125"
+              BoundingBox="-27.09138671875,122.133203125,54.1827734375,11.43359375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task\Sort"
+          TopLeft="420,114" />
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Data Conversion Output]"
+          TopLeft="331.3,131.55">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.7,0"
+              Start="0,0"
+              End="81.2,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="81.2,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Procesamiento de la dimension instructores\Actualizar la dimension instructores Task.Paths[Sort Output]"
+          TopLeft="469,156">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-215.1,52.7"
+              Start="0,0"
+              End="-215.1,45.2">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.35"
+                    Point2="0,26.35"
+                    Point3="-4,26.35" />
+                  <mssgle:LineSegment
+                    End="-211.1,26.35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-211.1,26.35"
+                    Point2="-215.1,26.35"
+                    Point3="-215.1,30.35" />
+                  <mssgle:LineSegment
+                    End="-215.1,45.2" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3889,23 +4611,7 @@
     design-time-name="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="109.6,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\UPPER"
-          TopLeft="191.428574688581,254.388238457908" />
-        <NodeLayout
-          Size="174.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Raw File Destination"
-          TopLeft="157.142859818984,565.56471099804" />
-        <NodeLayout
-          Size="103.2,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\TRIM"
-          TopLeft="195.00000332083,158.895427089983" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source"
-          TopLeft="175.158733141666,53.9542491227011" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="103.2,41.6"
           Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\NULL"
@@ -3914,6 +4620,22 @@
           Size="175.2,41.6"
           Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\INT Data Convertion"
           TopLeft="159.523812240484,456.96471227428" />
+        <NodeLayout
+          Size="103.2,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\TRIM"
+          TopLeft="195.00000332083,158.895427089983" />
+        <NodeLayout
+          Size="109.6,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\UPPER"
+          TopLeft="191.428574688581,254.388238457908" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Excel Source"
+          TopLeft="175.158733141666,53.9542491227011" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task\Raw File Destination"
+          TopLeft="157.142859818984,565.56471099804" />
         <EdgeLayout
           Id="Package\Procesamiento de la dimension instructores\Normalizar fuente instructores Task.Paths[Excel Source Output]"
           TopLeft="245.479368231248,95.5542491227011">
@@ -3933,7 +4655,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3955,7 +4679,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3977,7 +4703,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3999,7 +4727,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4021,7 +4751,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

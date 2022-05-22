@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="64"
-  DTS:VersionGUID="{E06BC726-D211-4F1A-8A74-2586B8D467CE}">
+  DTS:VersionBuild="65"
+  DTS:VersionGUID="{55600C68-4F9A-4509-AA27-8467EFDECF07}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3717,13 +3717,105 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="98,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Sort"
+          TopLeft="403,113" />
+        <NodeLayout
           Size="154,42"
           Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Raw File Source"
           TopLeft="155.5,5.5" />
         <NodeLayout
+          Size="163,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Derived Column 1"
+          TopLeft="136,633.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Slowly Changing Dimension"
+          TopLeft="128,209.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Union All"
+          TopLeft="161,522.5" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\OLE DB Command 1"
+          TopLeft="294,311.5" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Insertar destino"
+          TopLeft="143,730.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Derived Column"
+          TopLeft="17.5000000000001,311.5" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Data Conversion"
           TopLeft="154.5,107.5" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\OLE DB Command"
+          TopLeft="5.50000000000006,413.5" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Union All Output 1]"
+          TopLeft="219.5,564.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69"
+              Start="0,0"
+              End="0,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Sort Output]"
+          TopLeft="452,155">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-219.5,54.5"
+              Start="0,0"
+              End="-219.5,47">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.25"
+                    Point2="0,27.25"
+                    Point3="-4,27.25" />
+                  <mssgle:LineSegment
+                    End="-215.5,27.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-215.5,27.25"
+                    Point2="-219.5,27.25"
+                    Point3="-219.5,31.25" />
+                  <mssgle:LineSegment
+                    End="-219.5,47" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Raw File Source Output]"
           TopLeft="232.5,47.5">
@@ -3743,104 +3835,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="209,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Slowly Changing Dimension"
-          TopLeft="128,209.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Derived Column"
-          TopLeft="17.5000000000001,311.5" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Historical Attribute Inserts Output]"
-          TopLeft="182.25,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-87.75,60"
-              Start="0,0"
-              End="-87.75,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.503937007874"
-                    Point2="0,20.503937007874"
-                    Point3="-4,20.503937007874" />
-                  <mssgle:LineSegment
-                    End="-83.75,20.503937007874" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-83.75,20.503937007874"
-                    Point2="-87.75,20.503937007874"
-                    Point3="-87.75,24.503937007874" />
-                  <mssgle:LineSegment
-                    End="-87.75,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-118.93138671875,25.503937007874,150.1127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\OLE DB Command"
-          TopLeft="5.50000000000006,413.5" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Derived Column Output]"
-          TopLeft="91.5000000000001,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Union All"
-          TopLeft="161,522.5" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[New Output]"
-          TopLeft="236.416666666667,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,271"
-              Start="0,0"
-              End="0,263.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,263.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-27.09138671875,126.033203125,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3875,65 +3871,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Derived Column 1"
-          TopLeft="136,633.5" />
         <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Union All Output 1]"
-          TopLeft="219.5,564.5">
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[New Output]"
+          TopLeft="236.416666666667,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,69"
+              EndConnector="0,271"
               Start="0,0"
-              End="0,61.5">
+              End="0,263.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.5" />
+                    End="0,263.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-27.09138671875,126.033203125,54.1827734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Insertar destino"
-          TopLeft="143,730.5" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Derived Column Output1]"
-          TopLeft="218.5,675.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\OLE DB Command 1"
-          TopLeft="294,311.5" />
         <EdgeLayout
           Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Inferred Member Updates Output]"
           TopLeft="282.75,251.5">
@@ -3970,10 +3936,90 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task\Sort"
-          TopLeft="403,113" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Historical Attribute Inserts Output]"
+          TopLeft="182.25,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87.75,60"
+              Start="0,0"
+              End="-87.75,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.503937007874"
+                    Point2="0,20.503937007874"
+                    Point3="-4,20.503937007874" />
+                  <mssgle:LineSegment
+                    End="-83.75,20.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83.75,20.503937007874"
+                    Point2="-87.75,20.503937007874"
+                    Point3="-87.75,24.503937007874" />
+                  <mssgle:LineSegment
+                    End="-87.75,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-118.93138671875,25.503937007874,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Derived Column Output1]"
+          TopLeft="218.5,675.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Derived Column Output]"
+          TopLeft="91.5000000000001,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Data Conversion Output]"
           TopLeft="310.5,131.25">
@@ -3993,183 +4039,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Actualizar dimension course capacity Task.Paths[Sort Output]"
-          TopLeft="452,155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-219.5,54.5"
-              Start="0,0"
-              End="-219.5,47">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.25"
-                    Point2="0,27.25"
-                    Point3="-4,27.25" />
-                  <mssgle:LineSegment
-                    End="-215.5,27.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-215.5,27.25"
-                    Point2="-219.5,27.25"
-                    Point3="-219.5,31.25" />
-                  <mssgle:LineSegment
-                    End="-219.5,47" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Contenedor de secuencias\Course Capacity Task">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\Raw File Destination"
-          TopLeft="94.5714293985951,543.329418349679" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\Sort"
-          TopLeft="131.142858626891,435.352946356506" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\SPLIT Year-Season"
-          TopLeft="98.5714294837445,337.035297753324" />
-        <NodeLayout
-          Size="138,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\TRIM-UPPER"
-          TopLeft="110.142858286293,236.176473634053" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\Course Capacity CSV"
-          TopLeft="92.000000851495,48.5882357231062" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Sort Output]"
-          TopLeft="180.857144012743,477.352946356506">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65.9764719931731"
-              Start="0,0"
-              End="0,58.4764719931731">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.4764719931731" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Salida 0]"
-          TopLeft="181.357144055318,379.035297753324">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.317648603182"
-              Start="0,0"
-              End="0,48.817648603182">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.817648603182" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Derived Column Output]"
-          TopLeft="180.857143885019,278.176473634053">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,58.858824119271"
-              Start="0,0"
-              End="0,51.358824119271">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.358824119271" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Contenedor de secuencias\Course Capacity Task\Data Conversion"
-          TopLeft="106.428572474694,139.588236999347" />
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Data Conversion Output]"
-          TopLeft="181.535715380494,181.588236999347">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.588236634706"
-              Start="0,0"
-              End="0,47.088236634706">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.088236634706" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Flat File Source Output]"
-          TopLeft="181.964286663094,90.5882357231062">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49.0000012762408"
-              Start="0,0"
-              End="0,41.5000012762408">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5000012762408" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4240,5 +4112,157 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Contenedor de secuencias\Course Capacity Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\Raw File Destination"
+          TopLeft="94.5714293985951,543.329418349679" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\Data Conversion"
+          TopLeft="106.428572474694,139.588236999347" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\Sort"
+          TopLeft="131.142858626891,435.352946356506" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\SPLIT Year-Season"
+          TopLeft="98.5714294837445,337.035297753324" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\TRIM-UPPER"
+          TopLeft="110.142858286293,236.176473634053" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Contenedor de secuencias\Course Capacity Task\Course Capacity CSV"
+          TopLeft="92.000000851495,48.5882357231062" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Sort Output]"
+          TopLeft="180.857144012743,477.352946356506">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.9764719931731"
+              Start="0,0"
+              End="0,58.4764719931731">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.4764719931731" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Salida 0]"
+          TopLeft="181.357144055318,379.035297753324">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.317648603182"
+              Start="0,0"
+              End="0,48.817648603182">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.817648603182" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Flat File Source Output]"
+          TopLeft="181.964286663094,90.5882357231062">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.0000012762408"
+              Start="0,0"
+              End="0,41.5000012762408">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5000012762408" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Derived Column Output]"
+          TopLeft="180.857143885019,278.176473634053">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.858824119271"
+              Start="0,0"
+              End="0,51.358824119271">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.358824119271" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\Course Capacity Task.Paths[Data Conversion Output]"
+          TopLeft="181.535715380494,181.588236999347">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.588236634706"
+              Start="0,0"
+              End="0,47.088236634706">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.088236634706" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
