@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{5ECD7D9E-9CD9-4254-96CF-4279AD2CDA9A}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{A34D3372-AD59-4EBF-AFF0-7D6869184895}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -28,13 +28,13 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\Execute Package Task"
+          DTS:refId="Package\Contenedor de secuencias\Execute Package dim Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{C295D9EC-B153-4C70-A696-21D2CA728507}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute Package Task"
+          DTS:ObjectName="Execute Package dim Task"
           DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -45,13 +45,13 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Contenedor de secuencias\Execute Package Task 1"
+          DTS:refId="Package\Contenedor de secuencias\Execute Package fact Task"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{0F565035-A894-48EC-A533-7E57AC43E671}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute Package Task 1"
+          DTS:ObjectName="Execute Package fact Task"
           DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -67,10 +67,10 @@
           DTS:refId="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción]"
           DTS:CreationName=""
           DTS:DTSID="{1C74E023-4381-4016-955A-E15C5FA93C8F}"
-          DTS:From="Package\Contenedor de secuencias\Execute Package Task"
+          DTS:From="Package\Contenedor de secuencias\Execute Package dim Task"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Restricción"
-          DTS:To="Package\Contenedor de secuencias\Execute Package Task 1" />
+          DTS:To="Package\Contenedor de secuencias\Execute Package fact Task" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -87,16 +87,16 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="183,42"
-          Id="Package\Contenedor de secuencias\Execute Package Task"
+          Size="204,42"
+          Id="Package\Contenedor de secuencias\Execute Package dim Task"
           TopLeft="36,19" />
         <NodeLayout
-          Size="192,42"
-          Id="Package\Contenedor de secuencias\Execute Package Task 1"
+          Size="204,42"
+          Id="Package\Contenedor de secuencias\Execute Package fact Task"
           TopLeft="33,106" />
         <EdgeLayout
           Id="Package\Contenedor de secuencias.PrecedenceConstraints[Restricción]"
-          TopLeft="128.25,61">
+          TopLeft="136.5,61">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
