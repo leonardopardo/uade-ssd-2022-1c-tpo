@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>uade-ssd-2021-1c-tpo</Name>
-    <LastWriteTime>2022-06-27T18:44:33.6121355Z</LastWriteTime>
+    <LastWriteTime>2022-06-27T19:06:26.0926244Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -33,17 +33,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>fact_ingresantes.dtsx</Name>
-      <LastWriteTime>2022-06-27T18:49:06.6107741Z</LastWriteTime>
+      <LastWriteTime>2022-06-27T19:06:26.0896241Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>all.dtsx</Name>
-      <LastWriteTime>2022-06-27T18:30:16.4952898Z</LastWriteTime>
+      <LastWriteTime>2022-06-27T19:06:26.0529827Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>_truncate.dtsx</Name>
-      <LastWriteTime>2022-06-27T18:44:33.5407188Z</LastWriteTime>
+      <LastWriteTime>2022-06-27T19:19:06.2034089Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
